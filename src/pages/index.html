@@ -37,28 +37,44 @@
   <div class="content-container">
     <h2>Sign up for our newsletter!</h2>
     <p class="small">Receive the latest updates on exploring NB, because one day we’re going to go outside together.</p>
-    <form class="js-cm-form" id="subForm" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="30FEA77E7D0A9B8D7616376B90063231F418FE041521A225BDFE7775E8EEBFCD6277C8A4C6EF60F9F7B3EA403A83F522EB1FCA9A99B2538AB90D5B7A1F800385">
+    <form id="newsletter-form" action="/subscribe.php" method="post">
       <div class="fields">
         <div class="field">
           <label>Email </label>
-          <input autocomplete="Email" aria-label="Email" class="js-cm-email-input qa-input-email" id="fieldEmail" maxlength="200" name="cm-iythui-iythui" required="" type="email" placeholder="Email">
+          <input autocomplete="Email" aria-label="Email" class="" id="Email" maxlength="200" name="Email" required="" type="email" placeholder="Email">
         </div>
         <div class="field">
           <label>Postal Code </label>
-          <input aria-label="Postal Code" id="fieldttihih" maxlength="200" name="cm-f-ttihih" required="" placeholder="Postal Code">
+          <input aria-label="Postal Code" id="PostalCode" maxlength="7" name="PostalCode" placeholder="Postal Code">
+        </div>
+        <div class="field select">
+          <label>Language </label>
+          <select id="Language" name="Language" aria-label="Language">
+            <option value="English">English</option>
+            <option value="French">Français</option>
+          </select>
         </div>
       </div>
       <button type="submit">Submit</button>
     </form>
-    <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+    <div id="response"></div>
     <p class="tiny">We value your privacy and will never sell or distribute your personal information.<br />Once you click submit, an email will be sent to confirm your subscription.</p>
 </section>
-<footer>
+<section class="social">
   <div class="content-container">
+    <h2>Follow New Brunswick</h2>
     <div class="social-container">
       {{> social-en }}
     </div>
-    <h2>Share the love</h2>
-    <p class="small">Chances are, you’re not the only one missing New Brunswick.<br />Share this page and spread the love.</p>
+  </div>
+</section>
+<footer>
+  <div class="content-container">
+    <img class="gnb-logo" src="assets/img/gnb.svg" alt="Government of New Brunswick" />
+    <nav>
+      <a href="">Privacy Statement</a>
+      <a href="">Industry Website COVID Info</a>
+      <span>&copy; Province of New Brunswick</span>
+    </nav>
   </div>
 </footer>

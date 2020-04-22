@@ -1,0 +1,15 @@
+{
+    "name": "ithic/nbalways-campaignmonitor",
+    "description": "Handles newsletter subscriptions",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^4.1",
+        "campaignmonitor/createsend-php": "^6.1"
+    },
+    "authors": [
+        {
+            "name": "J. Robert Rankin",
+            "email": "rob@jrrankin.dev"
+        }
+    ]
+}

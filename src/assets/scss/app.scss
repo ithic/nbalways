@@ -6,7 +6,7 @@
 :root {
     --body-color: #303034;
     --dark: #38383C;
-    --accent-color: #2E6D66;
+    --accent-color: #FFBE39;
 }
 
 html, body {
@@ -78,7 +78,7 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
@@ -131,40 +131,73 @@ form {
 form .fields {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .field {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 100%;
     margin: 0.433333333em;
+    position: relative;
+    flex-basis: 100%;
+    @media (min-width: 768px) {
+        flex-basis: 33%;
+        max-width: 483px;
+    }
     label {
         display: none;
     }
-    input {
+    input, select {
         width: 100%;
+    }
+    &.select:before {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        background: url(../img/selectarrows.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 0.433333333em;
+        height: 0.966666667em;
+        z-index: 999;
     }
 }
 
-input, button {
+input, select, button {
     font-family: 'montserrat';
     border-radius: 15px;
     border: 0;
 }
 
-input {
+input, select {
     font-size: 0.666666667em;
     padding: 0.862500009em 1em;
     line-height: 1;
     &:focus {
         box-shadow: 0 0 0 2px var(--dark);
     }
+    &.error {
+        box-shadow: 0 0 0 2px red;
+    }
+}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    position: relative;
+    &::-ms-expand {
+        display: none;
+    }
 }
 
 button[type=submit] {
     background: transparent;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid var(--body-color);
     margin: 0.433333333em;
     font-size: 0.933333333em;
     text-transform: uppercase;
@@ -173,9 +206,18 @@ button[type=submit] {
     line-height: 1;
     transition: all 0.2s ease-in-out;
     &:hover {
-        box-shadow: 0 0 0 2px white;
+        box-shadow: 0 0 0 2px var(--body-color);
         letter-spacing: 5px;
     }
+}
+
+label.error {
+    font-size: 0.5em;
+}
+
+#response {
+    font-size: 1em;
+    margin: 1em;
 }
 
 .content-container {
@@ -190,7 +232,7 @@ button[type=submit] {
 }
 
 .logo {
-    width: 4.533333333em;
+    width: 7.562666667em;
 }
 
 .language-picker {
@@ -214,7 +256,7 @@ button[type=submit] {
     }
 }
 
-.social {
+div.social {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -257,7 +299,8 @@ button[type=submit] {
 }
 
 .tiny {
-    font-size: 0.4em;
+    font-size: 0.533333333em;
+    margin-top: 1em;
 }
 
 .social-container {
@@ -287,7 +330,6 @@ section.crowdriff {
 
 section.newsletter {
     background: var(--accent-color);
-    color: white;
     @media (min-width: 1200px) {
         p {
             margin-left: 8.333333333em;
@@ -296,18 +338,23 @@ section.newsletter {
     }
 }
 
-footer {
+section.social {
     background: var(--dark);
     color: white;
-    padding: 2.5em;
-    border-bottom: 1.633333333em solid black;
-    .fill {
-        fill: white;
-    }
     .social-container {
         font-size: 2.010833333em;
-        margin-bottom: 1em;
     }
+    .fill {
+        fill: var(--accent-color);
+    }
+}
+
+footer {
+    background: black;
+    color: white;
+    border-bottom: 1.633333333em solid black;
+    color: #616169;
+    font-family: 'montserrat';
     @media (min-width: 1200px) {
         p {
             margin-left: 7.4em;
@@ -315,8 +362,36 @@ footer {
             margin-bottom: 0;
         }
     }
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+    nav {
+        font-size: 12px;
+        text-transform: uppercase;
+        justify-content: center;
+        max-width: 724px;
+        margin: 0 auto;
+        &>* {
+            margin: 0.5em 0;
+        }
+        @media (min-width: 650px) {
+            flex-direction: row;
+            &>* {
+                margin: 0;
+                &:not(:last-child):after {
+                    content: '|';
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
 }
 
+.gnb-logo {
+    width: 8.291em;
+    margin: 2em;
+}
 //@import 'settings';
 //@import 'foundation';
 //@import 'motion-ui';

@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+#
+RewriteEngine On
+RewriteBase /web
+
+# redirect to dist-directory and hide the /dist in the URL
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule !^web(/?|/.+)$ /web%{REQUEST_URI} [L]
+
+</IfModule>

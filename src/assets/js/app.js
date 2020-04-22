@@ -1,4 +1,6 @@
-//import $ from 'jquery';
+import $ from 'jquery';
+import validate from 'jquery-validation';
+
 //import 'what-input';
 
 // Foundation JS relies on a global variable. In ES6, all imports are hoisted
@@ -15,3 +17,17 @@
 
 
 //$(document).foundation();
+
+$('#newsletter-form').validate({
+    submitHandler: function(form) {
+        $.ajax({
+            url: form.action,
+            type: form.method,
+            data: $(form).serialize(),
+            success: function(response) {
+                console.log('success!');
+                $('#response').html(response.message);
+            }
+        });
+    }
+})

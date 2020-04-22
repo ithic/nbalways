@@ -6,3 +6,5 @@ dist
 *.swp
 .cache
 .idea
+.env
+src/api/vendor
