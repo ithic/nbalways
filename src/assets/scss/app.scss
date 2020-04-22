@@ -103,6 +103,81 @@ main, section {
     padding: 2.433333333em;
 }
 
+.widget {
+    margin-left: -2.433333333em;
+    margin-right: -2.433333333em;
+    margin-bottom: -2.433333333em;
+    button.loadMore {
+        background: white !important;
+        color: var(--dark) !important;
+        font-size: 1em !important;
+        height: 85px !important;
+    }
+    .loadMore__text {
+        font-size: 22px !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        font-family: 'montserrat' !important;
+        letter-spacing: 4px !important;
+        padding: 1em 0 !important;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .fields {
+    display: flex;
+    flex-direction: row;
+}
+
+.field {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin: 0.433333333em;
+    label {
+        display: none;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+input, button {
+    font-family: 'montserrat';
+    border-radius: 15px;
+    border: 0;
+}
+
+input {
+    font-size: 0.666666667em;
+    padding: 0.862500009em 1em;
+    line-height: 1;
+    &:focus {
+        box-shadow: 0 0 0 2px var(--dark);
+    }
+}
+
+button[type=submit] {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin: 0.433333333em;
+    font-size: 0.933333333em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0.4467em;
+    line-height: 1;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 0 2px white;
+        letter-spacing: 5px;
+    }
+}
+
 .content-container {
     max-width: 33.933333333em;
     margin: 0 auto;
