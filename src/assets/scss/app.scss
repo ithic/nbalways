@@ -104,6 +104,7 @@ main, section {
 }
 
 .widget {
+    margin-top: 1.5em;
     margin-left: -2.433333333em;
     margin-right: -2.433333333em;
     margin-bottom: -2.433333333em;
@@ -294,6 +295,10 @@ div.social {
     color: var(--accent-color);
 }
 
+.medium {
+    font-size: 0.866666667em;
+}
+
 .small {
     font-size: 0.733333333em;
 }
@@ -319,9 +324,6 @@ main {
 
 section.crowdriff {
     font-family: 'montserrat';
-    p {
-        font-size: 0.866666667em;
-    }
     .callout {
         display: block;
         font-size: 1.615384615em;
@@ -332,8 +334,8 @@ section.newsletter {
     background: var(--accent-color);
     @media (min-width: 1200px) {
         p {
-            margin-left: 8.333333333em;
-            margin-right: 8.333333333em;
+            margin-left: 7.5rem;
+            margin-right: 7.5rem;
         }
     }
 }
