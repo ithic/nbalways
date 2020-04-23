@@ -1,0 +1,82 @@
+<header>
+    <nav>
+      <a href="/" class="logo"><img src="assets/img/logo.svg" alt="{{#ifequal language 'fr'}}Accueil{{else}}Home{{/ifequal}}" /></a>
+      <div>
+        <div class="language-picker">
+          <a href="https://nbalways.ca" lang="en" hreflang="en" {{#ifequal language 'en'}}class="current"{{/ifequal}}>EN</a><i class="divider">|</i>
+          <a href="https://nbtoujours.ca" lang="fr" hreflang="fr" {{#ifequal language 'fr'}}class="current"{{/ifequal}}>FR</a>
+        </div>
+        {{#ifequal language 'fr'}}
+          {{> social-fr }}
+        {{ else }}
+          {{> social-en }}
+        {{/ifequal}}
+      </div>
+    </nav>
+    <div class="content-container">
+      <h1>{{ hero }}</h1>
+    </div>
+  </header>
+  <main>
+    <div class="content-container">
+      <p class="spaced accent sans-serif">{{ intro }}</p>
+        {{{ body }}}
+      <img src="assets/img/video-placeholder.png" alt="TODO: Video goes here">
+      <div class="social-container">
+        {{> social-en }}
+      </div>
+      <hr />
+    </div>
+  </main>
+  <section class="crowdriff">
+    <div class="content-container">
+      {{{ crowdriff }}}
+    </div>
+    <div class="widget">
+      <script id="cr-init__36ab1acdd536dd51" src="https://starling.crowdriff.com/js/crowdriff.js" lang="{{ language }}" async></script>
+    </div>  
+  </section>
+  <section class="newsletter">
+    <div class="content-container">
+      {{{ newsletter }}}
+      <form id="newsletter-form" action="/subscribe.php" method="post">
+        <div class="fields">
+          <div class="field">
+            <label>{{#ifequal language 'fr'}}Courriel{{else}}Email{{/ifequal}} </label>
+            <input autocomplete="Email" aria-label="{{#ifequal language 'fr'}}Courriel{{else}}Email{{/ifequal}}" class="" id="Email" maxlength="200" name="Email" required="" type="email" placeholder="{{#ifequal language 'fr'}}Courriel{{else}}Email{{/ifequal}}">
+          </div>
+          <div class="field">
+            <label>{{#ifequal language 'fr'}}Code postal{{else}}Postal Code{{/ifequal}} </label>
+            <input aria-label="{{#ifequal language 'fr'}}Code postal{{else}}Postal Code{{/ifequal}}" id="PostalCode" maxlength="7" name="PostalCode" placeholder="{{#ifequal language 'fr'}}Code postal{{else}}Postal Code{{/ifequal}}">
+          </div>
+          <div class="field select">
+            <label>{{#ifequal language 'fr'}}Langue{{else}}Language{{/ifequal}} </label>
+            <select id="Language" name="Language" aria-label="{{#ifequal language 'fr'}}Langue{{else}}Language{{/ifequal}}">
+              {{#ifequal language 'en'}}
+                <option value="English">English</option>
+                <option value="French">Français</option>
+              {{else}}
+                <option value="French">Français</option>
+                <option value="English">English</option>
+              {{/ifequal}}
+            </select>
+          </div>
+        </div>
+        <button type="submit">{{#ifequal language 'fr'}}Soumettre{{else}}Submit{{/ifequal}}</button>
+      </form>
+      <div id="response"></div>
+      {{{ privacy }}}
+  </section>
+  <section class="social">
+    <div class="content-container">
+      <h2>{{ follow }}</h2>
+      <div class="social-container">
+        {{> social-en }}
+      </div>
+    </div>
+  </section>
+  {{#ifequal language 'fr'}}
+    {{> footer-fr }}
+  {{ else }}
+    {{> footer-en }}
+  {{/ifequal}}

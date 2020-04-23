@@ -1,18 +1,18 @@
 {{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="{{ language }}">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NB Always</title>
-    <meta property="og:title" content="NB Always">
-    <meta property="og:site_name" content="NB Always">
-    <meta property="og:url" content="https://nbalways.ca">
-    <meta property="og:description" content="There are a lot of things we all miss, but the things we love about New Brunswick last forever. Have hope&mdash;we'll be together soon.">
+    <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:site_name" content="{{ title }}">
+    <meta property="og:url" content="https://{{ domain }}">
+    <meta property="og:description" content="{{ description }}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/img/ogimage-en.jpg">
+    <meta property="og:image" content="assets/img/ogimage-{{ language }}.jpg">
     <link rel="shortcut icon" href="assets/img/favicon.png" />
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
