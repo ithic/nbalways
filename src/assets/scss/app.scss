@@ -177,6 +177,7 @@ form .fields {
         width: 0.433333333em;
         height: 0.966666667em;
         z-index: 999;
+        pointer-events: none;
     }
 }
 
@@ -367,7 +368,7 @@ footer {
     background: black;
     color: white;
     border-bottom: 1.633333333em solid black;
-    color: #616169;
+    // color: #616169;
     font-family: 'montserrat';
     @media (min-width: 1200px) {
         p {
