@@ -80,8 +80,8 @@ video.background {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    min-width: 100%;
-    min-height: 100%;
+    min-width: calc(100% + 2px); // Account for potential rounding errors that can cause 1px transparent edge
+    min-height: calc(100% + 2px); // Account for potential rounding errors that can cause 1px transparent edge
     object-fit: cover;
     z-index: -1;
 }
