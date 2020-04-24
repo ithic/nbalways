@@ -18,6 +18,37 @@ import validate from 'jquery-validation';
 
 //$(document).foundation();
 
+var backgroundVideos = {
+    '1280': '/assets/video/background-video-large.mp4',
+    '768' : '/assets/video/background-video-medium.mp4',
+    '500' : '/assets/video/background-video-small.mp4'
+};
+
+var currentVideo = null;
+
+function updateVideoSource() {
+    var el = $('video.background');
+
+    var width = $(window).width();
+    var video = backgroundVideos['500'];
+    
+    console.info('searching for current video...', video);
+    for (const size in backgroundVideos) {
+        if (width > parseInt(size)) {
+            video = backgroundVideos[size];
+        }
+    }
+
+    console.info('decided on video', video);
+
+    if (currentVideo != video) {
+        el.empty().append(`<source src="${video}" type="video/mp4">`);
+    }
+}
+
+$(window).resize(updateVideoSource);
+updateVideoSource();
+
 $('#newsletter-form').validate({
     submitHandler: function(form) {
         $.ajax({

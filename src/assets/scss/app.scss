@@ -60,12 +60,12 @@ hr {
 
 header {
     position: relative;
-    background: url(/assets/img/video-poster.jpg);
     background-size: cover;
     background-position: center;
     color: white;
     height: 100vh;
     padding: 1.2em 2.833333333em;
+    overflow: hidden;
     .content-container {
         position: absolute;
         top: 50%;
@@ -73,6 +73,17 @@ header {
         transform: translateX(-50%) translateY(-50%);
         min-width: 80vw;
     }
+}
+
+video.background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 nav {
