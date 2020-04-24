@@ -63,7 +63,7 @@ header {
     background-size: cover;
     background-position: center;
     color: white;
-    height: 100vh;
+    height: calc(100vh - 4em);
     padding: 1.2em 2.833333333em;
     overflow: hidden;
     .content-container {
