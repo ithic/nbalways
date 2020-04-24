@@ -32,14 +32,11 @@ function updateVideoSource() {
     var width = $(window).width();
     var video = backgroundVideos['500'];
     
-    console.info('searching for current video...', video);
     for (const size in backgroundVideos) {
         if (width > parseInt(size)) {
             video = backgroundVideos[size];
         }
     }
-
-    console.info('decided on video', video);
 
     if (currentVideo != video) {
         el.empty().append(`<source src="${video}" type="video/mp4">`);
