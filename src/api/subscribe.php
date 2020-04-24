@@ -19,9 +19,9 @@ $messages = [
         'FORMAT' => 'Please enter a valid email address.'
     ],
     'French' => [
-        'SUCCESS' => 'You\'ve been signed up for our email list.',
-        'ERROR'    => 'There was a problem signing you up for the email list. Please try again.',
-        'FORMAT' => 'Please enter a valid email address.'
+        'SUCCESS' => '« Vous êtes maintenant abonné à notre infolettre. »',
+        'ERROR'    => '« Un problème est survenu lors de votre abonnement à l’infolettre. Veuillez réessayer. »',
+        'FORMAT' => '« Veuillez inscrire une adresse courriel valide. »'
     ]
 ];
 

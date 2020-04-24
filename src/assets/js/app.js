@@ -8,7 +8,7 @@ import validate from 'jquery-validation';
 // it would execute earlier than we have assigned the global variable.
 // This is why we have to use CommonJS require() here since it doesn't
 // have the hoisting behavior.
-//window.jQuery = $;
+window.jQuery = $;
 //require('foundation-sites');
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -17,6 +17,13 @@ import validate from 'jquery-validation';
 
 
 //$(document).foundation();
+
+if (document.documentElement.lang.toLowerCase() === 'fr') {
+    const translationScript = document.createElement('script');
+    translationScript.type = 'text/javascript';
+    translationScript.src = "https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/localization/messages_fr.min.js";
+    $("head").append(translationScript);
+}
 
 var backgroundVideos = {
     '1280': '/assets/video/background-video-large.mp4',

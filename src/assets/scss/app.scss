@@ -368,7 +368,6 @@ footer {
     background: black;
     color: white;
     border-bottom: 1.633333333em solid black;
-    // color: #616169;
     font-family: 'montserrat';
     @media (min-width: 1200px) {
         p {
@@ -385,7 +384,7 @@ footer {
         font-size: 12px;
         text-transform: uppercase;
         justify-content: center;
-        max-width: 724px;
+        // max-width: 724px;
         margin: 0 auto;
         &>* {
             margin: 0.5em 0;
