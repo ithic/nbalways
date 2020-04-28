@@ -50,7 +50,7 @@
 <p><strong>Have hope&mdash;we’ll be together soon.</strong></p>
 
       <img src="assets/img/video-placeholder.png" alt="TODO: Video goes here">
-      <div class="social-container">
+      <!-- <div class="social-container">
         <div class="social">
             <a href="https://www.facebook.com/DestinationNB" target="_blank" rel="noopener">
                 <svg alt="Facebook" class="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.22 69.11"><path id="Path_16" data-name="Path 16" class="fill" d="M19.51,23.76V15.12a4.13,4.13,0,0,1,3.9-4.32h3.9V0h-7.8C13,0,7.8,5.8,7.8,13v10.8H0v10.8H7.8V69.11H19.51V34.56h7.8l3.9-10.8Z"/></svg>
@@ -61,7 +61,11 @@
             <a href="https://twitter.com/destinationnb" target="_blank" rel="noopener">
                 <svg alt="Twitter" class="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.94 65.76"><path id="Path_17" data-name="Path 17" class="fill" d="M80.94,7.79a34.79,34.79,0,0,1-9.56,2.62,16.53,16.53,0,0,0,7.3-9.18,33.14,33.14,0,0,1-10.52,4,16.59,16.59,0,0,0-28.7,11.34h0a16.56,16.56,0,0,0,.38,3.78A46.94,46.94,0,0,1,5.64,3a16.59,16.59,0,0,0,5.1,22.17,16.41,16.41,0,0,1-7.5-2v.18a16.66,16.66,0,0,0,13.29,16.3,16.37,16.37,0,0,1-4.35.55A15.1,15.1,0,0,1,9,39.91,16.77,16.77,0,0,0,24.55,51.47,33.36,33.36,0,0,1,4,58.54a31,31,0,0,1-4-.23,46.72,46.72,0,0,0,25.46,7.45c30.53,0,47.22-25.29,47.22-47.22,0-.73,0-1.44-.06-2.14a32.8,32.8,0,0,0,8.32-8.62Z"/></svg>
             </a>
-        </div>      </div>
+        </div>      </div> -->
+      <div class="social-share">
+        <a class="facebook-share-button" href="#"><img src="assets/img/Facebook_share_en.svg" alt="Share to Facebook"></a>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Soon%20enough%20we%E2%80%99ll%20be%20together,%20exploring%20New%20Brunswick%20and%20all%20the%20places%20and%20spaces%20we%20call%20home.%20In%20the%20meantime,%20stop%20by%20our%20website%20to%20connect%20and%20learn%20more.&url=https://nbalways.ca"><img src="assets/img/Twitter_share.svg" alt="Share to Twitter"></a>
+      </div>
       <hr />
     </div>
   </main>
@@ -131,6 +135,17 @@
         </nav>
       </div>
     </footer>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '261302084999775',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v6.0'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/en_CA/sdk.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3858670-28"></script>
     <script>

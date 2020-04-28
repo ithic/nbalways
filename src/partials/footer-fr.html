@@ -9,6 +9,17 @@
   </div>
 </footer>
 <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '261302084999775',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/fr_CA/sdk.js"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

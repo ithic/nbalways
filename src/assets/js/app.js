@@ -65,4 +65,23 @@ $('#newsletter-form').validate({
             }
         });
     }
-})
+});
+
+const shareMessage = {
+    en: 'Soon enough we’ll be together, exploring New Brunswick and all the places and spaces we call home. In the meantime, stop by our website to connect and learn more.',
+    fr: 'Bientôt nous nous retrouverons. Nous explorerons ensemble le Nouveau-Brunswick, ses petits coins de paradis et tous les lieux que nous aimons. En attendant, venez faire un tour (et de belles découvertes) sur notre site Web.'
+}
+
+const shareURL = {
+    en: 'https://nbalways.ca',
+    fr: 'https://nbtoujours.ca'
+}
+
+$('.facebook-share-button').click((event) => {
+    event.preventDefault();
+    FB.ui({
+        method: 'share',
+        href: shareURL[document.documentElement.lang.toLowerCase()],
+        quote: shareMessage[document.documentElement.lang.toLowerCase()]
+      }, function(response){});
+});
