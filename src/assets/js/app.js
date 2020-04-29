@@ -69,7 +69,7 @@ $('#newsletter-form').validate({
 
 const shareMessage = {
     en: 'Soon enough we’ll be together, exploring New Brunswick and all the places and spaces we call home. #NBalways',
-    fr: 'Bientôt nous nous retrouverons. Nous explorerons ensemble le Nouveau-Brunswick, ses petits coins de paradis et tous les lieux que nous aimons. En attendant, venez faire un tour (et de belles découvertes) sur notre site Web.'
+    fr: 'Bientôt nous nous retrouverons. Nous explorerons ensemble le Nouveau-Brunswick, ses petits coins de paradis et tous les lieux que nous aimons. #NBtoujours'
 }
 
 const shareURL = {
