@@ -286,8 +286,13 @@ div.social {
 }
 
 .social-share {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 1em 0 2em 0;
     & > a {
+        display: inline-block;
         margin: 0 0.25em;
     }
 }
