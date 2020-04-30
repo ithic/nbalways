@@ -19,9 +19,9 @@ $messages = [
         'FORMAT' => 'Please enter a valid email address.'
     ],
     'French' => [
-        'SUCCESS' => '« Vous êtes maintenant abonné à notre infolettre. »',
-        'ERROR'    => '« Un problème est survenu lors de votre abonnement à l’infolettre. Veuillez réessayer. »',
-        'FORMAT' => '« Veuillez inscrire une adresse courriel valide. »'
+        'SUCCESS' => 'Vous êtes maintenant abonné à notre infolettre.',
+        'ERROR'    => 'Un problème est survenu lors de votre abonnement à l’infolettre. Veuillez réessayer.',
+        'FORMAT' => 'Veuillez inscrire une adresse courriel valide.'
     ]
 ];
 
