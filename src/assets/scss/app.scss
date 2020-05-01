@@ -67,8 +67,9 @@ header {
     padding: 1.2em 2.833333333em;
     overflow: hidden;
     .gnb-logo {
-        width: 5em;
+        width: 4em;
         margin: 1em;
+        opacity: 0.3;
     }
     @media (min-width: 768px) {
         .right {
