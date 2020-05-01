@@ -55,11 +55,13 @@ updateVideoSource();
 
 $('#newsletter-form').validate({
     submitHandler: function(form) {
-        $('#newsletter-form :input').prop('disabled', true);
         $.ajax({
             url: form.action,
             type: form.method,
             data: $(form).serialize(),
+            beforeSubmit: function() {
+                $('#newsletter-form :input').prop('disabled', true);
+            },
             success: function(response) {
                 $('#newsletter-form').fadeOut();
                 $('#response').html(response.message);
