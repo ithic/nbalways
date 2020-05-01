@@ -66,6 +66,21 @@ header {
     height: calc(100vh - 4em);
     padding: 1.2em 2.833333333em;
     overflow: hidden;
+    .gnb-logo {
+        width: 5em;
+        margin: 1em;
+    }
+    @media (min-width: 768px) {
+        .right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: baseline;
+        }
+        .gnb-logo {
+            margin: 0 0 0 1em;
+        }
+    }
     .content-container {
         position: absolute;
         top: 50%;

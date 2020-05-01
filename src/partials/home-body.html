@@ -1,16 +1,12 @@
 <header>
     <nav>
       <a href="/" class="logo"><img src="assets/img/logo.svg" alt="{{#ifequal language 'fr'}}Accueil{{else}}Home{{/ifequal}}" /></a>
-      <div>
+      <div class="right">
         <div class="language-picker">
           <a href="https://nbalways.ca" lang="en" hreflang="en" {{#ifequal language 'en'}}class="current"{{/ifequal}}>EN</a><i class="divider">|</i>
           <a href="https://nbtoujours.ca" lang="fr" hreflang="fr" {{#ifequal language 'fr'}}class="current"{{/ifequal}}>FR</a>
         </div>
-        {{#ifequal language 'fr'}}
-          {{> social-fr }}
-        {{ else }}
-          {{> social-en }}
-        {{/ifequal}}
+        <img class="gnb-logo" src="/assets/img/gnb.svg" alt="{{#ifequal lang 'fr'}}Gouvernement du Nouveau-Brunswick{{else}}Government of New Brunswick{{/ifequal}}" />
       </div>
     </nav>
     <div class="content-container">
