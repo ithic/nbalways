@@ -55,13 +55,17 @@ updateVideoSource();
 
 $('#newsletter-form').validate({
     submitHandler: function(form) {
+        $('#newsletter-form :input').prop('disabled', true);
         $.ajax({
             url: form.action,
             type: form.method,
             data: $(form).serialize(),
             success: function(response) {
-                console.log('success!');
+                $('#newsletter-form').fadeOut();
                 $('#response').html(response.message);
+            },
+            error: function(response) {
+                $('#newsletter-form :input').prop('disabled', false);
             }
         });
     }
