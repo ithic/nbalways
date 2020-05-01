@@ -14,12 +14,12 @@ $lists = [
 
 $messages = [
     'English' => [
-        'SUCCESS' => 'Great, the next step is to check your email inbox (or spam folder) for a confirmation email that will activate your NB Insider subscription. If you’re a Gmail user and don\'t see the email, you might want to take a peek in the Promotions tab.',
+        'SUCCESS' => 'Great, the next step is to check your email inbox (or spam folder) for a confirmation email that will activate your subscription.',
         'ERROR'    => 'There was a problem signing you up for the email list. Please try again.',
         'FORMAT' => 'Please enter a valid email address.'
     ],
     'French' => [
-        'SUCCESS' => 'Parfait! Vérifiez maintenant votre boîte de réception (ou dossier de pourriels) pour y trouver un courriel de confirmation qui vous permettra d\'activer votre abonnement à Exclusivement NB. Si vous êtes un utilisateur Gmail et que vous ne voyez pas le courriel, vérifiez l’onglet Promotions.',
+        'SUCCESS' => 'Parfait! Vérifiez maintenant votre boîte de réception (ou dossier de pourriels) pour y trouver un courriel de confirmation qui vous permettra d\'activer votre abonnement',
         'ERROR'    => 'Un problème est survenu lors de votre abonnement à l’infolettre. Veuillez réessayer.',
         'FORMAT' => 'Veuillez inscrire une adresse courriel valide.'
     ]

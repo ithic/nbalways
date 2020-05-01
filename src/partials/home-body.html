@@ -50,8 +50,13 @@
   </section>
   <section class="newsletter">
     <div class="content-container">
-      {{{ newsletter }}}
+      {{#ifequal language 'fr'}}
+      <h2>Abonnez-vous à notre infolettre</h2>
+      {{else}}
+      <h2>Sign up for our newsletter</h2>
+      {{/ifequal}}
       <form id="newsletter-form" action="/subscribe.php" method="post">
+        {{{ newsletter }}}
         <div class="fields">
           <div class="field">
             <label>{{#ifequal language 'fr'}}Courriel{{else}}Email{{/ifequal}} </label>
@@ -75,9 +80,9 @@
           </div>
         </div>
         <button type="submit">{{#ifequal language 'fr'}}Envoyer{{else}}Submit{{/ifequal}}</button>
+        {{{ privacy }}}
       </form>
       <div id="response"></div>
-      {{{ privacy }}}
   </section>
   <section class="social">
     <div class="content-container">
