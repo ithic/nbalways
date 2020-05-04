@@ -29,6 +29,7 @@ p {
 a {
     text-decoration: none;
     transition: opacity 0.2s ease-in-out;
+    color: var(--accent-color);
     &:hover {
         opacity: 0.7;
     }
@@ -66,6 +67,9 @@ header {
     height: calc(100vh - 4em);
     padding: 1.2em 2.833333333em;
     overflow: hidden;
+    .dark {
+        background: black;
+    }
     .gnb-logo {
         width: 4em;
         margin: 1em;
@@ -89,6 +93,10 @@ header {
         transform: translateX(-50%) translateY(-50%);
         min-width: 80vw;
     }
+}
+
+.dark {
+    background: black;
 }
 
 video.background {
@@ -375,6 +383,19 @@ main {
         margin: 1em 0 2em 0;
         fill: var(--dark);
     }
+    &.content {
+        padding: 2em 0;
+        text-align: left;
+        font-family: 'montserrat';
+        p {
+            margin: 1em 0;
+        }
+    }
+}
+
+ol, ul {
+    list-style: list;
+    margin: 1em 0 1em 2em;
 }
 
 section.crowdriff {
@@ -447,6 +468,15 @@ footer {
 .gnb-logo {
     width: 8.291em;
     margin: 2em;
+}
+
+body.privacy, body.confidentialite {
+    header {
+        height: auto;
+    }
+    main.content {
+        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
 }
 //@import 'settings';
 //@import 'foundation';

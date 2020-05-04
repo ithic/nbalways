@@ -1,0 +1,27 @@
+<header class="dark">
+    <nav>
+      <a href="/" class="logo"><img src="assets/img/logo.svg" alt="{{#ifequal language 'fr'}}Accueil{{else}}Home{{/ifequal}}" /></a>
+      <div class="right">
+        {{> language-picker }}
+        <img class="gnb-logo" src="/assets/img/gnb.svg" alt="{{#ifequal language 'fr'}}Gouvernement du Nouveau-Brunswick{{else}}Government of New Brunswick{{/ifequal}}" />
+      </div>
+    </nav>
+  </header>
+  <main class="content">
+    <div class="content-container">
+      {{{ content }}}
+    </div>
+  </main>
+  <section class="social">
+    <div class="content-container">
+      <h2>{{ follow }}</h2>
+      <div class="social-container">
+        {{> social-en }}
+      </div>
+    </div>
+  </section>
+  {{#ifequal language 'fr'}}
+    {{> footer-fr }}
+  {{ else }}
+    {{> footer-en }}
+  {{/ifequal}}

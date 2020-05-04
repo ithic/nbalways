@@ -1,0 +1,9 @@
+<div class="language-picker">
+{{#ifequal language 'en'}}
+    <a href="https://nbalways.ca/{{page}}.html" lang="en" hreflang="en" class="current">EN</a><i class="divider">|</i>
+    <a href="{{translation}}" lang="fr" hreflang="fr">FR</a>
+{{else}}
+    <a href="{{translation}}" lang="en" hreflang="en">EN</a><i class="divider">|</i>
+    <a href="https://nbtoujours.ca/{{page}}.html" lang="fr" hreflang="fr" class="current">FR</a>
+{{/ifequal}}
+</div>
