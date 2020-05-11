@@ -139,6 +139,110 @@ main, section {
     padding: 2.433333333em;
 }
 
+section.map, #map {
+    padding: 0;
+    width: 100%;
+}
+
+section.map {
+    --popup-height: 200px;
+    --heart-offset: 112px;
+    background: var(--accent-color);
+    padding: 2em 0 1em 0;
+    .content {
+        h2 {
+            color: white;
+            margin-bottom: 0;
+        }
+        p {
+            max-width: 38em;
+            margin: 1em auto 2em auto;
+        }
+    }
+    .mapboxgl-popup-tip {
+        display: none;
+    }
+    .mapboxgl-popup-content {        
+        padding: 0;
+        border-radius: 0;
+        border-top-left-radius: 5em;
+        display: flex;
+        flex-direction: row;
+        height: var(--popup-height);
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 224px;
+            height: calc(var(--popup-height) + 1px);
+            background: url(../img/heart.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateX(-50%);
+        }
+    }
+    .popup-content {
+        padding-left: var(--heart-offset);
+        text-align: left;
+    }
+    .main {
+        font-size: 1.5em;
+        font-weight: 600;
+        font-family: 'montserrat';
+        padding: 1em 2em 1em 1em;
+        max-width: 21em;
+        margin: 0;
+    }
+    .attribution {
+        display: block;
+        font-weight: normal;
+        font-size: 0.666666667em;
+        margin: 0.5em 0;
+    }
+    .address {
+        position: absolute;
+        bottom: 0;
+        left: var(--heart-offset);
+        padding: 1em 1.5em;
+        display: flex;
+        flex-direction: row;
+    }
+    .pin {
+        height: 1.5em;
+        fill: var(--body-color);
+        margin-right: 0.5em;
+    }
+    .image {
+        width: var(--popup-height);
+        height: var(--popup-height);
+        flex-shrink: 0;
+        overflow: hidden;
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            max-width: 150%;
+            max-height: 150%;
+            object-fit: cover;
+        }
+    }
+    .mapboxgl-popup-close-button {
+        background: var(--accent-color);
+        color: white;
+        font-weight: bold;
+        right: auto;
+        left: 100%;
+        border-radius: 0;
+    }
+    .mapboxgl-popup {
+        animation: fadein 0.2s;
+    }
+    .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-attrib {
+        display: none;
+    }
+}
+
 .widget {
     margin-top: 1.5em;
     margin-left: -2.433333333em;
@@ -481,7 +585,7 @@ footer {
     margin: 2em;
 }
 
-body.privacy, body.confidentialite {
+body.privacy, body.confidentialite, body.welcome, body.goodbye {
     header {
         height: auto;
     }
@@ -489,6 +593,9 @@ body.privacy, body.confidentialite {
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
 }
+
+@keyframes fadein {from {opacity: 0;} to {opacity: 1;}}
+
 //@import 'settings';
 //@import 'foundation';
 //@import 'motion-ui';

@@ -21,6 +21,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/assets/css/app.css?m=10">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -87,6 +89,13 @@
       <hr />
     </div>
   </main>
+  <section class="map">
+    <div class="content">
+      <h2>New Brunswick is waiting</h2>
+      <p class="sans-serif small">With so many places to go in New Brunswick, it might be hard to decide where to go first, so why not take some inspiration from others?</p>
+    </div>
+    <div id="map" style="height: 500px"></div>
+  </section>
   <section class="crowdriff">
     <div class="content-container">
       <p class="medium spaced sans-serif">Share a little NB love <span class="accent serif spaced-reset callout">#NBalways</span></p>
