@@ -460,6 +460,11 @@ ul.image-downloads {
 
 section.escape {
     padding-bottom: 0;
+    h3 {
+        max-width: 20em;
+        margin-left: auto;
+        margin-right: auto;
+    }
     hr {
         margin-top: 2.433333333em;
     }
