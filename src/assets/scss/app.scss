@@ -363,17 +363,13 @@ div.social {
 
 .instructions {
     font-family: 'montserrat';
-    font-size: 0.533333em;
-    text-align: left;
+    font-size: 0.53333333em;
     max-width: 50em;
     margin: 4em auto 0 auto;
     opacity: 0.5;
     p {
         margin-left: auto;
         margin-right: auto;
-    }
-    @media (min-width: 1024px) {
-        font-size: 0.4em;
     }
 }
 
