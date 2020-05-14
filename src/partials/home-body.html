@@ -28,90 +28,20 @@
   </main>
   <section class="escape">
     <div class="content-container">
-      <h3 class="sans-serif"><strong>Download Your Own Virtual Escape with our Zoom backgrounds</strong></h3>
-      <p class="small">It's easy to show off the best of New Brunswick</p>
+      <h3 class="sans-serif"><strong>{{zoomCTA}}</strong></h3>
+      <p class="small">{{zoomTagline}}</p>
       <ul class="image-downloads">
+        {{#each zoom}}
         <li>
-          <a href="">
+          <a href="/assets/img/zoom/full/{{image}}" target="_blank">
             <div>
-              <img src="https://placeimg.com/300/168/nature?1" alt="">
-              <span class="descriptor">Descriptor, NB</span>
+              <img src="/assets/img/zoom/thumbs/{{image}}" alt="{{title}}">
+              <span class="descriptor">{{title}}</span>
             </div>
-            <span class="download">Download</span>
+            <span class="download">{{#ifequal language 'fr'}}Télécharger{{else}}Download{{/ifequal}}</span>
           </a>
         </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?2" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?3" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?4" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?5" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?6" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?7" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?8" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <div>
-              <img src="https://placeimg.com/300/168/nature?9" alt="">
-              <span class="descriptor">Descriptor, NB</span>
-            </div>
-            <span class="download">Download</span>
-          </a>
-        </li>
+        {{/each}}
       </ul>
       <hr />
     </div>

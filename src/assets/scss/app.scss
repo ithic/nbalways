@@ -442,7 +442,9 @@ ul.image-downloads {
         color: white;
         position: absolute;
         left: 1em;
+        right: 1em;
         bottom: 0.5em;
+        text-align: left;
     }
     .download {
         color: var(--body-color);
