@@ -93,11 +93,16 @@ $('.facebook-share-button').click((event) => {
 });
 
 mapboxgl.accessToken = 'pk.eyJ1IjoianJyYW5raW4iLCJhIjoiY2s5dnQ5bjVuMDJzMzNtcnI1dnJuOTlocyJ9.SQv9UqQvK05yKgK9Xgxxrw';
+var bounds = [
+    [-69.138537, 44.343955], // Southwest coordinates
+    [-63.446923, 48.405988] // Northeast coordinates
+];
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc',
+    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc/draft',
     center: [-65.4894, 47.4170], // starting position [lng, lat],
-    zoom: 8
+    zoom: 8,
+    maxBounds: bounds
 });
 
 map.scrollZoom.disable();
@@ -111,7 +116,6 @@ map.on('load', () => {
             return;
         }
         response.json().then((data) => {
-            console.log(data);
             map.addSource('places', {
                 'type': 'geojson',
                 'data': data
