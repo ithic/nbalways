@@ -33,9 +33,9 @@
       <ul class="image-downloads">
         {{#each zoom}}
         <li>
-          <a href="/assets/img/zoom/full/{{image}}" download="{{image}}" target="_blank">
+          <a href="/assets/img/zoom/{{../language}}/full/{{image}}" download="{{image}}" target="_blank">
             <div>
-              <img src="/assets/img/zoom/thumbs/{{image}}" alt="{{title}}">
+              <img src="/assets/img/zoom/{{../language}}/thumbs/{{image}}" alt="{{title}}">
               <span class="descriptor">{{title}}</span>
             </div>
             <span class="download">{{#ifequal ../language 'fr'}}Télécharger{{else}}Download{{/ifequal}}</span>
