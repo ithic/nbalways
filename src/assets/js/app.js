@@ -74,7 +74,7 @@ $('#newsletter-form').validate({
 });
 
 const shareMessage = {
-    en: 'All the places we love are waiting for us. Where will you go first? #NBalways',
+    en: 'All our favourite places are waiting for us. Where will you go first?',
     fr: 'Tellement de choses nous ont manqué. Vos lieux préférés n’attendent que vous. #NBAlways'
 }
 
