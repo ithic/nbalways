@@ -75,7 +75,7 @@ $('#newsletter-form').validate({
 
 const shareMessage = {
     en: 'All the places we love are waiting for us. Where will you go first? #NBalways',
-    fr: 'Bientôt nous nous retrouverons. Nous explorerons ensemble le Nouveau-Brunswick, ses petits coins de paradis et tous les lieux que nous aimons. #NBtoujours'
+    fr: 'Tellement de choses nous ont manqué. Vos lieux préférés n’attendent que vous. #NBAlways'
 }
 
 const shareURL = {
