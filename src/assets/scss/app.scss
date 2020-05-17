@@ -511,6 +511,13 @@ section.crowdriff {
     }
 }
 
+html[lang=fr] section.crowdriff {
+    .callout {
+        margin-top: 0;
+        font-size: 1.615384615em;
+    }
+}
+
 section.newsletter {
     background: var(--accent-color);
     @media (min-width: 1200px) {
