@@ -26,9 +26,9 @@ if (document.documentElement.lang.toLowerCase() === 'fr') {
 }
 
 var backgroundVideos = {
-    '1280': '/assets/video/background-video-large.mp4',
-    '768' : '/assets/video/background-video-medium.mp4',
-    '500' : '/assets/video/background-video-small.mp4'
+    '1280': '/assets/video/background-video-large-2.mp4',
+    '768' : '/assets/video/background-video-medium-2.mp4',
+    '500' : '/assets/video/background-video-small-2.mp4'
 };
 
 var currentVideo = null;
