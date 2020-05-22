@@ -645,6 +645,10 @@ section.map {
                 transform: translateX(-50%);
             }
         }
+        button {
+            font-size: 2em;
+            font-weight: 400;
+        }
     }
     .popup-content {
         text-align: left;
@@ -678,6 +682,9 @@ section.map {
             bottom: 0;
             left: var(--heart-offset);
         }
+    }
+    .separator {
+        margin: 0 0.75em;
     }
     .pin {
         height: 1.5em;
