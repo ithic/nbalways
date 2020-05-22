@@ -104,7 +104,7 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc/draft',
     center: lastCoordinates, // starting position [lng, lat],
     zoom: lastZoom,
-    maxBounds: bounds
+    //maxBounds: bounds
 });
 
 map.scrollZoom.disable();
