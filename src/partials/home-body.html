@@ -14,18 +14,20 @@
   </header>
   <main>
     <div class="content-container">
-      <p class="spaced accent sans-serif">{{ intro }}</p>
+      <p class="spaced accent sans-serif enbiggen">{{ intro }}</p>
       {{{ body }}}
-      <div class="video">
-        <iframe class="" src="{{#ifequal language 'fr'}}https://player.vimeo.com/video/420416206{{else}}https://player.vimeo.com/video/420415913{{/ifequal}}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-      <!-- <div class="social-container">
-        {{> social-en }}
-      </div> -->
-      {{> social-share }}
-      <hr />
     </div>
   </main>
+  {{> map }}
+  <section class="shareprompt">
+    <div class="content-container">
+      <p class="spaced sans-serif">So, where will you go first?</p>
+      <span class="accent serif spaced-reset callout"><strong>#NBAlways</strong></span>
+      <p class="sans-serif small"><strong>Use this hashtag to share with us the places you're missing most in New Brunswickand where you'd like to go first</strong></p>
+    </div>
+    {{> social-share }}
+  </section>
+  {{> video-embed }}
   <section class="escape">
     <div class="content-container">
       <h3 class="sans-serif"><strong>{{zoomCTA}}</strong></h3>
