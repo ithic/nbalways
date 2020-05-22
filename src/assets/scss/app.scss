@@ -514,6 +514,10 @@ section.crowdriff {
     font-family: 'montserrat';
 }
 
+.block {
+    display: block;
+}
+
 .callout {
     display: block;
     font-size: 1.909090909em;
@@ -727,6 +731,92 @@ section.shareprompt {
     }
     strong {
         font-weight: 600;
+    }
+}
+
+section.soundscapes {
+    div.soundscapes {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-top: 2em;
+    }
+    .sound {
+        p {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .image {
+            border-radius: 50%;
+            position: relative;
+            display: block;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                width: 60px;
+                height: 75px;
+                background: url(../img/playbutton-white.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        span.block {
+            margin: 0.25em 0 0 0;
+        }
+        span strong {
+            font-weight: 800;
+        }
+    }
+    .controls {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0;
+    }
+    .playback {
+        width: 13px;
+        height: 16px;
+        background: url(../img/play-button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 0.75em;
+    }
+    .track {
+        position: relative;
+        width: 104px;
+        height: 7px;
+        background: url(../img/playtrack.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .position {
+        position: absolute;
+        left: 0.5em;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 12px;
+        width: 1px;
+        background: black;
+    }
+    a.button {
+        background: var(--accent-color);
+        color: white;
+        display: block;
+        padding: 1em;
+        font-family: montserrat;
+        font-weight: 600;
+        border-radius: 0.5em;
+        margin: 2em 0;
+        font-size: 0.75em;
+    }
+    hr {
+        margin-top: 3em;
     }
 }
 

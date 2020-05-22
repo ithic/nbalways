@@ -1,0 +1,30 @@
+<section class="soundscapes">
+    <div class="content-container">
+        {{{ soundscapesContent }}}
+        <div class="soundscapes">
+            {{#each soundscapes}}
+                <div class="sound">
+                    <div class="image">
+                        <img src="/assets/img/{{image}}" alt="{{title}}">
+                    </div>
+                    <audio id="sound-{{@index}}">
+                        <source src="/assets/sounds/{{file}}" type="audio/mpeg">
+                    </audio>
+                    <div class="controls">
+                        <div class="playback" target="#sound-{{@index}}"></div>
+                        <div class="track"><div class="position"></div></div>
+                    </div>
+                    <div class="legend">
+                        <p>
+                            <span class="serif"><strong>{{ title }}</strong></span>
+                            <span class="sans-serif spaced tiny block">sounds of</span>
+                            <span class="serif small">New Brunswick</span>
+                        </p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <a href="https://spotify.com" class="button" target="_blank" rel="noopener noreferrer">Check out our Playlists on Spotify!</a>
+        <hr />
+    </div>
+</section>
