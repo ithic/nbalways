@@ -621,35 +621,43 @@ section.map {
     .mapboxgl-popup-content {        
         padding: 0;
         border-radius: 0;
-        border-top-left-radius: 5em;
         display: flex;
-        flex-direction: row;
-        height: var(--popup-height);
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            width: 224px;
-            height: calc(var(--popup-height) + 1px);
-            background: url(../img/heart.svg);
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
-            transform: translateX(-50%);
+        flex-direction: column;
+        @media (min-width: 1024px) {
+            border-top-left-radius: 5em;
+            flex-direction: row;
+            height: var(--popup-height);
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 224px;
+                height: calc(var(--popup-height) + 1px);
+                background: url(../img/heart.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transform: translateX(-50%);
+            }
         }
     }
     .popup-content {
-        padding-left: var(--heart-offset);
         text-align: left;
+        @media (min-width: 1024px) {
+            padding-left: var(--heart-offset);
+        }
     }
     .main {
         font-size: 1.5em;
         font-weight: 600;
         font-family: 'montserrat';
-        padding: 1em 2em 1em 1em;
-        max-width: 21em;
+        padding: 1em;
         margin: 0;
+        @media (min-width: 1024px) {
+            padding: 1em 2em 1em 1em;
+            max-width: 21em;
+        }
     }
     .attribution {
         display: block;
@@ -658,12 +666,14 @@ section.map {
         margin: 0.5em 0;
     }
     .address {
-        position: absolute;
-        bottom: 0;
-        left: var(--heart-offset);
         padding: 1em 1.5em;
         display: flex;
         flex-direction: row;
+        @media (min-width: 1024px) {
+            position: absolute;
+            bottom: 0;
+            left: var(--heart-offset);
+        }
     }
     .pin {
         height: 1.5em;
@@ -671,8 +681,8 @@ section.map {
         margin-right: 0.5em;
     }
     .image {
-        width: var(--popup-height);
-        height: var(--popup-height);
+        width: 300px;
+        height: 200px;
         flex-shrink: 0;
         overflow: hidden;
         img {
@@ -681,6 +691,10 @@ section.map {
             max-width: 150%;
             max-height: 150%;
             object-fit: cover;
+        }
+        @media (min-width: 1024px) {
+            width: var(--popup-height);
+            height: var(--popup-height);
         }
     }
     .mapboxgl-popup-close-button {

@@ -151,13 +151,22 @@ map.on('load', () => {
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
-                
+                var offsetX = 0;
+                var offsetY = 0.02;
+                var anchor = 'bottom';
+                var maxWidth = '300px';
+                if (window.innerWidth >= 1024) {
+                    offsetX = 0.05;
+                    offsetY = 0;
+                    anchor = 'bottom-left';
+                    maxWidth = 'none';
+                }
                 map.flyTo({
-                    center: [coordinates[0] + 0.05, coordinates[1]],
+                    center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
                     zoom: 12,
                     essential: true // this animation is considered essential with respect to prefers-reduced-motion
                 });
-                var popup = new mapboxgl.Popup({anchor: 'bottom-left', maxWidth: 'none'})
+                var popup = new mapboxgl.Popup({anchor: anchor, maxWidth: maxWidth})
                     .setLngLat(coordinates)
                     .setHTML(`<div class="popup-content"><p class="main">${content}<span class="attribution">${attribution}</span></p><span class="address"><svg class="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 75.01"><path d="M25.09,0l-.21,0-.07,0A25.5,25.5,0,0,0,3.19,37.91V38a1.91,1.91,0,0,0,.22.53l0,0L23.59,73.94a2.1,2.1,0,0,0,2.87.79,2.07,2.07,0,0,0,.79-.79L47.09,38.6l.13-.19a2,2,0,0,0,.15-.41,1.34,1.34,0,0,0,.07-.18,25.75,25.75,0,0,0,3.15-12.19A25.49,25.49,0,0,0,25.31,0Zm.19,10.22a14.68,14.68,0,0,1,0,29.35,14.68,14.68,0,0,1,0-29.35Z"/></svg>${name} | ${address}</span></div><div class="image"><img src="${image}" /></div>`)
                     .addTo(map);
