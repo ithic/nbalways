@@ -1,16 +1,18 @@
 <section class="tunein">
     <div class="content-container">
-        {{{ tuneinContent }}}
+        {{{ nbtvContent }}}
         <div class="clips">
-            {{#each tuneinShows}}
+            {{#each nbtvShows}}
                 <div class="clip">
                     <a class="thumbnail" href="{{url}}" target="_blank" rel="noopener noreferrer">
                         <img src="/assets/img/{{thumbnail}}" alt="{{title}}">
                     </a>
                     <p>
                         <span class="serif"><strong class="black">{{title}}</strong></span>
-                        <span class="sans-serif spaced tiny block">sights of</span>
-                        <span class="serif small">New Brunswick</span>
+                        {{#if operator}}
+                        <span class="sans-serif spaced tiny block">with</span>
+                        <span class="serif small">{{operator}}</span>
+                        {{/if}}
                     </p>
                     <p class="sans-serif tiny">{{description}}</p>
                 </div>
