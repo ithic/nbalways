@@ -366,6 +366,10 @@ div.social {
     margin-top: 1em;
 }
 
+.black {
+    font-weight: 800;
+}
+
 .instructions {
     font-family: 'montserrat';
     font-size: 0.53333333em;
@@ -681,6 +685,7 @@ section.map {
             position: absolute;
             bottom: 0;
             left: var(--heart-offset);
+            max-width: 35em;
         }
     }
     .separator {
@@ -780,7 +785,7 @@ section.soundscapes {
     div.soundscapes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1.5em;
+        grid-gap: 2em;
         margin-left: -1em;
         margin-right: -1em;
         margin-top: 2em;
@@ -859,6 +864,146 @@ section.soundscapes {
     }
     hr {
         margin-top: 3em;
+    }
+}
+
+section.calendar {
+    padding-bottom: 0;
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 2em;
+        margin-bottom: 3em;
+    }
+    img {
+        display: block;
+    }
+    .cta {
+        position: absolute;
+        display: block;
+        top: 0.5em;
+        left: 0;
+    }
+    .future {
+        font-size: 0.5em;
+        background: var(--accent-color);
+        display: block;
+        padding: 0.5em 1em;
+        width: 8em;
+    }
+    .now {
+        font-size: 0.75em;
+        font-weight: 600;
+        padding: 1em;
+        display: none;
+    }
+    .event {
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);
+        font-family: montserrat;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        &.live {
+            background: var(--accent-color);
+            .future {
+                display: none;
+            }
+            .now {
+                display: block;
+            }
+            .date {
+                display: none;
+            }
+            .title {
+                margin-top: 2em;
+            }
+            .event-content {
+                padding: 1em 0.75em;
+            }
+            .moreinfo {
+                display: none;
+            }
+            .tunein {
+                display: block;
+            }
+            .icslink {
+                display: none;
+            }
+        }
+    }
+    .date {
+        font-weight: 600;
+        font-size: 0.75em;
+    }
+    .title {
+        font-family: merriweather;
+        font-weight: 800;
+        margin-top: 1em;
+    }
+    .operator {
+        text-transform: uppercase;
+        font-size: 0.5em;
+        margin: 1em 0;
+    }
+    .event-content {
+        padding: 2em 1em 3.5em 1em;
+        position: relative;
+        height: 100%;
+    }
+    .moreinfo a {
+        color: var(--body-color);
+        font-size: 0.5em;
+        text-transform: lowercase;
+        font-weight: 600;
+        &:after {
+            content: ">";
+            margin-left: 0.2em;
+        }
+    }
+    .tunein, .icslink {
+        position: absolute;
+        left: 0.5em;
+        bottom: 0.5em;
+        right: 0.5em;
+
+        a {
+            display: block;
+            border: 1px solid black;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--body-color);
+            font-family: montserrat;
+            font-size: 0.5em;
+            font-weight: 600;
+            padding: 1em;
+            border-radius: 0.5em;
+            margin: 1em 0;
+            text-align: center;
+        }
+    }
+    .tunein {
+        display: none;
+        a {
+            padding: 3em 1em;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+                opacity: 1;
+                background: white;
+            }
+        }
+        &:hover {
+            color: white;
+        }
+    }
+    .icslink a:hover {
+        background: var(--accent-color);
+        opacity: 1;
+        transition: all 0.25s ease-in-out;
+    }
+    .icslink a:before {
+        content: "+";
+        margin-right: 0.2em;
     }
 }
 

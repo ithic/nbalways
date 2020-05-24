@@ -1,0 +1,27 @@
+<section class="calendar">
+    <div class="content-container">
+        {{{calendarContent}}}
+        <div class="events">
+            {{#each calendarEvents}}
+            <div class="event{{#if @first}} live{{/if}}" data-start="{{startDate}}" data-end="{{endDate}}">
+                <img src="/assets/events/img/{{image}}" alt="{{title}}">
+                <div class="event-content">
+                    <div class="cta">
+                        <div class="future">{{#ifequal language 'fr'}}Join us LIVE{{else}}Join us LIVE{{/ifequal}}</div>
+                        <div class="now">{{#ifequal language 'fr'}}happening now LIVE{{else}}happening now LIVE{{/ifequal}}</div>
+                    </div>
+                    <div class="date">{{formattedDate}}</div>
+                    <div class="title">{{title}}</div>
+                    {{#if operator}}<div class="operator">{{#ifequal language 'fr'}}with{{else}}with{{/ifequal}} {{operator}}</div>{{/if}}
+                    {{#if link}}
+                    <div class="tunein"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Tune in now{{else}}Tune in now{{/ifequal}}</a></div>
+                    <div class="moreinfo"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Learn more{{else}}Learn more{{/ifequal}}</a></div>
+                    {{/if}}
+                    {{#if ICSFile}}<div class="icslink"><a href="/assets/events/ics/{{ICSFile}}">{{#ifequal language 'fr'}}Add to calendar{{else}}Add to calendar{{/ifequal}}</a></div>{{/if}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <hr />
+    </div>
+</section>
