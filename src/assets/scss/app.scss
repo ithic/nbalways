@@ -1002,11 +1002,17 @@ section.calendar {
             }
         }
         &.recorded {
+            .event-content {
+                padding: 1em 1em 3.5em 1em;
+            }
             .title {
                 margin-top: 1em;
             }
             .past {
                 display: block;
+            }
+            .date {
+                display: none;
             }
             .future {
                 display: none;
