@@ -12,12 +12,11 @@
                         <div class="past">{{#ifequal language 'fr'}}Watch now{{else}}Watch now{{/ifequal}}</div>
                     </div>
                     <div class="date">{{formattedDate}}</div>
-                    <div class="title">{{title}}</div>
+                    <div class="title"><a href="{{operatorPage}}" target="_blank" rel="noopener nofollow">{{title}}</a></div>
                     {{#if operator}}<div class="operator">{{#ifequal language 'fr'}}with{{else}}with{{/ifequal}} {{operator}}</div>{{/if}}
                     {{#if link}}
                     <div class="tunein"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Tune in now{{else}}Tune in now{{/ifequal}}</a></div>
                     <div class="watchnow"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Watch now{{else}}Watch now{{/ifequal}}</a></div>
-                    <div class="moreinfo"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Learn more{{else}}Learn more{{/ifequal}}</a></div>
                     {{/if}}
                     {{#if ICSFile}}<div class="icslink"><a href="/assets/events/ics/{{ICSFile}}">{{#ifequal language 'fr'}}Add to calendar{{else}}Add to calendar{{/ifequal}}</a></div>{{/if}}
                 </div>

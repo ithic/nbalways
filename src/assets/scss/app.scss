@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.433333333em;
+    font-size: 1.1em;
 }
 
 img {
@@ -656,8 +656,11 @@ section.map {
     }
     .popup-content {
         text-align: left;
+        display: flex;
+        flex-direction: column;
         @media (min-width: 1024px) {
             padding-left: var(--heart-offset);
+            flex-direction: row;
         }
     }
     .main {
@@ -678,19 +681,27 @@ section.map {
         margin: 0.5em 0;
     }
     .address {
-        padding: 1em 1.5em;
+        padding: 1em 1.5em 1em 1.5em;
+        margin-left: 1em;
+        position: relative;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        span {
+            display: block;
+        }
+        svg {
+            position: absolute;
+            top: 1em;
+            left: 0;
+        }
         @media (min-width: 1024px) {
             position: absolute;
             bottom: 0;
             left: var(--heart-offset);
-            max-width: 35em;
+            max-width: 33em;
         }
     }
-    .separator {
-        margin: 0 0.75em;
-    }
+    
     .pin {
         height: 1.5em;
         fill: var(--body-color);
@@ -701,12 +712,17 @@ section.map {
         height: 200px;
         flex-shrink: 0;
         overflow: hidden;
+        position: relative;
         img {
             min-width: 100%;
             min-height: 100%;
             max-width: 150%;
             max-height: 150%;
             object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
         }
         @media (min-width: 1024px) {
             width: var(--popup-height);
@@ -728,7 +744,7 @@ section.map {
         display: none;
     }
     & + section {
-        padding-top: 9em;
+        padding-top: 8em;
         margin-top: -6em;
     }
 }
@@ -744,6 +760,14 @@ section.tunein {
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 0;
+        }
+    }
+    .title {
+        transition: all 0.25s ease-in-out;
+    }
+    .clip:hover {
+        .title {
+            color: var(--accent-color);
         }
     }
     .thumbnail {
@@ -762,6 +786,9 @@ section.tunein {
             width: 60px;
             height: 75px;
         }
+        &:hover {
+            opacity: 1;
+        }
     }
     span.block {
         margin: 0.25em 0 0 0;
@@ -769,6 +796,8 @@ section.tunein {
 }
 
 section.shareprompt {
+    font-size: 0.9em;
+    padding-bottom: 1.5em;
     background: var(--accent-color);
     p {
         color: var(--body-color);
@@ -800,6 +829,18 @@ section.soundscapes {
             border-radius: 50%;
             position: relative;
             display: block;
+            width: 100%;
+            padding-top: 100%;
+            overflow: hidden;
+            img {
+                position: absolute;
+                min-width: 100%;
+                min-height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                object-fit: cover;
+            }
             &:after {
                 content: '';
                 position: absolute;
@@ -814,7 +855,7 @@ section.soundscapes {
             }
         }
         span.block {
-            margin: 0.25em 0 0 0;
+            margin: 0.5em 0 0 0;
         }
         span strong {
             font-weight: 800;
@@ -865,6 +906,9 @@ section.soundscapes {
     }
     hr {
         margin-top: 3em;
+    }
+    .legend {
+        font-size: 0.766666667em;
     }
 }
 
@@ -924,10 +968,7 @@ section.calendar {
                 margin-top: 2em;
             }
             .event-content {
-                padding: 1em 0.75em;
-            }
-            .moreinfo {
-                display: none;
+                padding: 1em 0.75em 5em 0.75em;
             }
             .tunein {
                 display: block;
@@ -944,9 +985,6 @@ section.calendar {
                 display: block;
             }
             .future {
-                display: none;
-            }
-            .moreinfo {
                 display: none;
             }
             .tunein {
@@ -968,6 +1006,9 @@ section.calendar {
         font-family: merriweather;
         font-weight: 800;
         margin-top: 1em;
+        a {
+            color: var(--body-color);
+        }
     }
     .operator {
         text-transform: uppercase;
@@ -1016,7 +1057,9 @@ section.calendar {
             transition: all 0.25s ease-in-out;
             &:hover {
                 opacity: 1;
+                border: 1px solid white;
                 background: white;
+                color: var(--accent-color);
             }
         }
         &:hover {
@@ -1028,6 +1071,8 @@ section.calendar {
     }
     .icslink a:hover, .watchnow a:hover {
         background: var(--accent-color);
+        border: 1px solid var(--accent-color);
+        color: white;
         opacity: 1;
         transition: all 0.25s ease-in-out;
     }
