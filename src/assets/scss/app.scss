@@ -50,6 +50,9 @@ h1 {
 
 h2 {
     font-size: 1.1em;
+    strong {
+        font-weight: 800;
+    }
 }
 
 img {
@@ -434,6 +437,12 @@ li {
     line-height: 1.3;
 }
 
+.tablet-breakout {
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+
 ul.image-downloads {
     display: flex;
     flex-direction: row;
@@ -770,6 +779,9 @@ section.tunein {
             color: var(--accent-color);
         }
     }
+    .clip {
+        font-size: 0.766667em;
+    }
     .thumbnail {
         position: relative;
         display: block;
@@ -791,7 +803,7 @@ section.tunein {
         }
     }
     span.block {
-        margin: 0.25em 0 0 0;
+        margin: 0.5em 0 0 0;
     }
 }
 
@@ -825,6 +837,15 @@ section.soundscapes {
             margin-left: 0;
             margin-right: 0;
         }
+        &.playing {
+            .playback {
+                background: url(../img/pause-button.svg);
+            }
+            .image:after {
+                transform: translateX(-50%) translateY(-50%) scale(2);
+                opacity: 0;
+            }
+        }
         .image {
             border-radius: 50%;
             position: relative;
@@ -852,6 +873,9 @@ section.soundscapes {
                 background: url(../img/playbutton-white.svg);
                 background-position: center;
                 background-repeat: no-repeat;
+                pointer-events: none;
+                transform-origin: 17px 35px;
+                transition: all 0.25s ease-in;
             }
         }
         span.block {
@@ -886,7 +910,7 @@ section.soundscapes {
     }
     .position {
         position: absolute;
-        left: 0.5em;
+        left: 13px;
         top: 50%;
         transform: translateY(-50%);
         height: 12px;
@@ -979,7 +1003,7 @@ section.calendar {
         }
         &.recorded {
             .title {
-                margin-top: 2em;
+                margin-top: 1em;
             }
             .past {
                 display: block;

@@ -3,7 +3,7 @@
         {{{calendarContent}}}
         <div class="events">
             {{#each calendarEvents}}
-            <div class="event{{#if @first}} live{{/if}}{{#if @last}} recorded{{/if}}" data-start="{{startDate}}" data-end="{{endDate}}">
+            <div class="event{{#if @last}} recorded{{/if}}" data-start="{{startDate}}" data-end="{{endDate}}">
                 <img src="/assets/events/img/{{image}}" alt="{{title}}">
                 <div class="event-content">
                     <div class="cta">

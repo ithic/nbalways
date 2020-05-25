@@ -192,3 +192,49 @@ map.on('load', () => {
         console.log('error!', err);
     })
 });
+
+$(document).ready(() => {
+    // Audio playback controls
+    $('.sound').each((key, player) => {
+        const track = $(player).find('.track');
+        const trackWidth = $(track).innerWidth() - 26;
+        const position = $(player).find('.position');
+        var playing = false;
+        var audio = $(player).find('audio')[0];
+        audio.ontimeupdate = () => {
+            if (audio.currentTime === audio.duration) {
+                stopAudio(player);
+            }
+
+            var progress = audio.currentTime / audio.duration;
+            console.info(trackWidth, progress, trackWidth * progress);
+            $(position).css('transform', `translateX(${(trackWidth * progress)}px) translateY(-50%)`);
+        };
+        $(player).find('img, .playback').click(() => {
+            playing = !playing;
+            if (playing) {
+                startAudio(player);
+            } else {
+                stopAudio(player);
+            }
+        });
+    });
+});
+
+function stopAudio(player) {
+    const position = $(player).find('.position');
+    const audio = $(player).find('audio')[0];
+    $(player).removeClass('playing');
+    $(position).css('transform', 'translateX(0) translateY(-50%)');
+    audio.pause();
+    audio.currentTime = 0;
+}
+
+function startAudio(player) {
+    $('.sound').each((index, player) => {
+        stopAudio(player);
+    });
+    const audio = $(player).find('audio')[0];
+    $(player).addClass('playing');
+    audio.play();
+}
