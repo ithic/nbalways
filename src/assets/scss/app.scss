@@ -887,12 +887,15 @@ section.calendar {
         top: 0.5em;
         left: 0;
     }
-    .future {
+    .future, .past {
         font-size: 0.5em;
         background: var(--accent-color);
         display: block;
         padding: 0.5em 1em;
         width: 8em;
+    }
+    .past {
+        display: none;
     }
     .now {
         font-size: 0.75em;
@@ -933,6 +936,29 @@ section.calendar {
                 display: none;
             }
         }
+        &.recorded {
+            .title {
+                margin-top: 2em;
+            }
+            .past {
+                display: block;
+            }
+            .future {
+                display: none;
+            }
+            .moreinfo {
+                display: none;
+            }
+            .tunein {
+                display: none;
+            }
+            .icslink {
+                display: none;
+            }
+            .watchnow {
+                display: block;
+            }
+        }
     }
     .date {
         font-weight: 600;
@@ -963,12 +989,11 @@ section.calendar {
             margin-left: 0.2em;
         }
     }
-    .tunein, .icslink {
+    .tunein, .icslink, .watchnow {
         position: absolute;
         left: 0.5em;
         bottom: 0.5em;
         right: 0.5em;
-
         a {
             display: block;
             border: 1px solid black;
@@ -998,7 +1023,10 @@ section.calendar {
             color: white;
         }
     }
-    .icslink a:hover {
+    .watchnow {
+        display: none;
+    }
+    .icslink a:hover, .watchnow a:hover {
         background: var(--accent-color);
         opacity: 1;
         transition: all 0.25s ease-in-out;
