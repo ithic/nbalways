@@ -4,7 +4,9 @@
         <div class="events">
             {{#each calendarEvents}}
             <div class="event{{#if @last}} recorded{{/if}}" data-start="{{startDate}}" data-end="{{endDate}}">
-                <img src="/assets/events/img/{{image}}" alt="{{title}}">
+                <div class="image">
+                    <img src="/assets/events/img/{{image}}" alt="{{title}}">
+                </div>
                 <div class="event-content">
                     <div class="cta">
                         <div class="future">{{#ifequal language 'fr'}}Join us LIVE{{else}}Join us LIVE{{/ifequal}}</div>
