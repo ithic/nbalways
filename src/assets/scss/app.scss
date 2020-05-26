@@ -236,6 +236,7 @@ select {
     -webkit-appearance:none; /* Safari and Chrome */
     appearance:none;
     position: relative;
+    background: white;
     &::-ms-expand {
         display: none;
     }
