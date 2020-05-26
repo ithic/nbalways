@@ -544,6 +544,12 @@ html[lang=fr] section.crowdriff {
     }
 }
 
+html[lang=fr] section.calendar {
+    .future, .past {
+        width: 11em;
+    }
+}
+
 section.newsletter {
     background: var(--accent-color);
     @media (min-width: 1200px) {
