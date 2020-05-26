@@ -768,13 +768,16 @@ section.tunein {
     padding-bottom: 0;
     .clips {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 1.5em;
         margin: 2em 0;
         p {
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 0;
+        }
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     .title {
@@ -832,11 +835,14 @@ section.soundscapes {
     padding-bottom: 0;
     div.soundscapes {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 2em;
         margin-left: -1em;
         margin-right: -1em;
         margin-top: 2em;
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
     .sound {
         p {
@@ -946,11 +952,17 @@ section.calendar {
     padding-bottom: 0;
     .events {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-column-gap: 1em;
         grid-row-gap: 2em;
         margin-top: 3em;
         margin-bottom: 3em;
+        @media (min-width: 450px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
     img {
         display: block;
