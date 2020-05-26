@@ -127,7 +127,7 @@ const mapdata = {
               "address": "8642 Route 114, Alma, NB",
               "content": "We're hoping to snag one of the Yurts at Fundy and dine al fresco by the ocean our whole time there. ",
               "image": "Fundy National Park.jpg",
-              "url": "https://www.facebook.com/FundyNP/"
+              "url": "https://www.pc.gc.ca/en/pn-np/nb/fundy"
             },
             "geometry": {
               "coordinates": [
@@ -145,7 +145,7 @@ const mapdata = {
               "address": "NB",
               "content": "Van Horne Estate was the original physical distancing trend setter, can't wait for the next low tide to drive across the ocean for a visit! ",
               "image": "Ministers Island.jpg",
-              "url": "https://www.facebook.com/ministersisland/"
+              "url": "https://www.ministersisland.net/"
             },
             "geometry": {
               "coordinates": [
@@ -164,7 +164,7 @@ const mapdata = {
               "content": "I can already hear the music! The contagious Acadian joie de vivre is exactly what we need this summer at le Pays de la Sagouine. ",
               "name": "Le Pays de la Sagouine",
               "image": "Le Pays de la Sagouine.jpg",
-              "url": "https://www.facebook.com/paysdelasagouine/"
+              "url": "https://www.sagouine.com/en/"
             },
             "geometry": {
               "coordinates": [
@@ -183,7 +183,7 @@ const mapdata = {
               "content": "Get me to the glamp ground, I need to get out of my house!",
               "name": "Cielo Glamping Maritime",
               "image": "Cielo Glamping.jpg",
-              "url": "https://www.facebook.com/cieloglamping/"
+              "url": "https://en.glampingcielo.com/"
             },
             "geometry": {
               "coordinates": [
@@ -202,7 +202,7 @@ const mapdata = {
               "content": "Looking forward to raising a glass with some of the nicest view of the city at Magnetic Hill Winery.",
               "name": "Magnetic Hill Winery",
               "image": "Magnetic Hill Winery.jpg",
-              "url": "https://www.facebook.com/MagneticHillWinery/"
+              "url": "https://magnetichillwinery.com/"
             },
             "geometry": {
               "coordinates": [
@@ -217,11 +217,11 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "220 King Street, Saint Andrews, New Brunswick",
+              "address": "220 King Street, Saint Andrews, NB",
               "content": "Excited to wander the beautiful gardens at Kingsbrae and enjoy the magic of the blossoms (also the perfect backdrop for IG shots)!",
               "name": "Kingsbrae Garden",
               "image": "Kingsbrae.jpg",
-              "url": "https://www.facebook.com/Kingsbrae.Garden/"
+              "url": "https://www.kingsbraegarden.com/"
             },
             "geometry": {
               "coordinates": [
@@ -240,7 +240,7 @@ const mapdata = {
               "content": "Stepping back into time at Kings Landing is just the right getaway I've been dreaming of. ",
               "name": "Kings Landing",
               "image": "Kings Landing.jpg",
-              "url": "https://www.facebook.com/KingsLandingNB/"
+              "url": "https://kingslanding.nb.ca/"
             },
             "geometry": {
               "coordinates": [
@@ -259,7 +259,7 @@ const mapdata = {
               "content": "Eating seafood on the ocean floor is next level and a meal we will never forget. Looking forward to trying epic culinary experiences this summer.",
               "name": "Red Rock Adventure",
               "image": "Red Rock.jpg",
-              "url": "https://www.facebook.com/redrockadventure/"
+              "url": "https://www.bayoffundyadventures.com/"
             },
             "geometry": {
               "coordinates": [
@@ -293,11 +293,11 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "street",
-              "address": "Ministers Island, NB",
+              "address": "1 Lower Campus Road, St. Andrews, NB",
               "content": "We miss Loki & Snorkel! Can't wait to see those furry faces.",
               "name": "Huntsman Fundy Discovery Aquarium",
               "image": "Huntsman Fundy Discovery Aquarium.jpg",
-              "url": "https://www.facebook.com/huntsmanmarine/"
+              "url": "https://www.huntsmanmarine.ca/fundy-discovery-aquarium/"
             },
             "geometry": {
               "coordinates": [
@@ -315,7 +315,7 @@ const mapdata = {
               "name": "Uncorked Tours",
               "address": "3-139 Leinster St. Saint John, NB",
               "image": "uncorked.jpg",
-              "url": "https://www.facebook.com/UncorkedNB/"
+              "url": "https://www.uncorkednb.com/"
             },
             "geometry": {
               "coordinates": [
@@ -329,7 +329,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "address": "860 Front Mountain Rd, Moncton, NB",
+              "address": "McNamee, NB",
               "name": "Wilson's Sporting Camps",
               "content": "I know there's an Atlantic salmon with my name on it this year. I can't wait to get out on the river at Wilson's. ",
               "image": "Wilsons Sporting Camps.jpg",
@@ -356,7 +356,7 @@ const mapdata = {
               "address": "N.-B.",
               "content": "Le luxueux domaine de Van Horne aurait été un endroit rêvé pour s'isoler! On attend impatiemment la prochaine marée basse pour s'y rendre.",
               "image": "Ministers Island.jpg",
-              "url": "https://www.facebook.com/ministersisland/"
+              "url": "https://www.ministersisland.net/"
             },
             "geometry": {
               "coordinates": [
@@ -375,7 +375,7 @@ const mapdata = {
               "content": "Nous avons hâte de revoir Loki et Snorkel, les gentils phoques de l'aquarium.",
               "name": "Aquarium-découverte Fundy de Huntsman",
               "image": "Huntsman Fundy Discovery Aquarium.jpg",
-              "url": "https://www.facebook.com/huntsmanmarine/"
+              "url": "https://www.huntsmanmarine.ca/fundy-discovery-aquarium/"
             },
             "geometry": {
               "coordinates": [
@@ -393,7 +393,7 @@ const mapdata = {
               "name": "Wilson's Sporting Camps",
               "content": "C'est cette année que ça se passe, je vais enfin attraper un saumon. Très hâte d'aller pêcher sur la Miramichi à la pourvoirie Wilson's.",
               "image": "Wilsons Sporting Camps.jpg",
-              "url": "https://www.facebook.com/WilsonsCamps/"
+              "url": "https://wilsonscamps.nb.ca/"
             },
             "geometry": {
               "coordinates": [
@@ -411,7 +411,7 @@ const mapdata = {
               "name": "Uncorked Tours",
               "address": "139 rue Leinster, app. 3, Saint John, N.-B.",
               "image": "uncorked.jpg",
-              "url": "https://www.facebook.com/UncorkedNB/"
+              "url": "https://www.uncorkednb.com/"
             },
             "geometry": {
               "coordinates": [
@@ -430,7 +430,7 @@ const mapdata = {
               "content": "On entend la musique jusqu'ici! Le Pays de la Sagouine est un incontournable de la joie de vivre acadienne; en plein ce qu'il nous faut cet été!",
               "name": "Le Pays de la Sagouine",
               "image": "Le Pays de la Sagouine.jpg",
-              "url": "https://www.facebook.com/paysdelasagouine/"
+              "url": "https://www.sagouine.com/fr/"
             },
             "geometry": {
               "coordinates": [
@@ -447,9 +447,9 @@ const mapdata = {
               "accuracy": "interpolated",
               "address": "232, ch. des Huîtres, Haut-Shippagan, N.-B.",
               "content": "Il est grand temps d'aller au terrain de « glamping », ça fera du bien de sortir de la maison!",
-              "name": "Les Brasseurs du Petit-Sault",
-              "image": "Les Brasseurs.jpg",
-              "url": "https://www.petitsault.com/home"
+              "name": "Cielo Glamping Maritime",
+              "image": "Cielo Glamping.jpg",
+              "url": "https://www.glampingcielo.com/"
             },
             "geometry": {
               "coordinates": [
@@ -467,7 +467,7 @@ const mapdata = {
               "address": "8642, route 114, Alma, N.-B.",
               "content": "Nous espérons réserver une des yourtes à Fundy et manger au bord de l'océan pendant tout notre séjour. ",
               "image": "Fundy National Park.jpg",
-              "url": "https://www.facebook.com/FundyNP/"
+              "url": "https://www.pc.gc.ca/fr/pn-np/nb/fundy"
             },
             "geometry": {
               "coordinates": [
@@ -486,7 +486,7 @@ const mapdata = {
               "content": "Notre inoubliable repas de fruits de mer sur le fond de l'océan l'an dernier nous donne le goût de vivre d'autres expériences gourmandes cet été.",
               "name": "Red Rock Adventure",
               "image": "Red Rock.jpg",
-              "url": "https://www.facebook.com/redrockadventure/"
+              "url": "https://www.bayoffundyadventures.com/"
             },
             "geometry": {
               "coordinates": [
@@ -505,7 +505,7 @@ const mapdata = {
               "content": "On se croirait dans un roman d'époque. Kings Landing est parfait pour faire un voyage dans le temps.",
               "name": "Kings Landing",
               "image": "Kings Landing.jpg",
-              "url": "https://www.facebook.com/KingsLandingNB/"
+              "url": "https://kingslanding.nb.ca/?lang=fr"
             },
             "geometry": {
               "coordinates": [
@@ -524,7 +524,7 @@ const mapdata = {
               "content": "Ma bière de prédilection pour l'été, c'est la Brut IPA #3. J'ai tellement hâte d'en boire autour du feu.",
               "name": "Les Brasseurs du Petit-Sault",
               "image": "Les Brasseurs.jpg",
-              "url": "https://www.facebook.com/Petit.Sault/"
+              "url": "https://www.petitsault.com/"
             },
             "geometry": {
               "coordinates": [
@@ -543,7 +543,7 @@ const mapdata = {
               "content": "Nous avons hâte de voir les fleurs du jardin Kingsbrae, un endroit magique pour se promener (et prendre des photos pour Instagram).",
               "name": "Jardin Kingsbrae",
               "image": "Kingsbrae.jpg",
-              "url": "https://www.facebook.com/Kingsbrae.Garden/"
+              "url": "https://www.kingsbraegarden.com/"
             },
             "geometry": {
               "coordinates": [
@@ -562,7 +562,7 @@ const mapdata = {
               "content": "On a hâte de boire un verre devant une vue imprenable sur Moncton au vignoble de Magnetic Hill.",
               "name": "Magnetic Hill Winery",
               "image": "Magnetic Hill Winery.jpg",
-              "url": "https://www.facebook.com/MagneticHillWinery/"
+              "url": "https://magnetichillwinery.com/fr/"
             },
             "geometry": {
               "coordinates": [
