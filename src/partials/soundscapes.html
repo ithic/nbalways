@@ -17,14 +17,14 @@
                     <div class="legend">
                         <p>
                             <span class="serif"><strong>{{ title }}</strong></span>
-                            <span class="sans-serif spaced tiny block">sounds of</span>
-                            <span class="serif small">New Brunswick</span>
+                            <span class="sans-serif spaced tiny block">{{#ifequal ../language 'fr'}}Sons du{{else}}sounds of{{/ifequal}}</span>
+                            <span class="serif small">{{#ifequal ../language 'fr'}}Nouveau-Brunswick{{else}}New Brunswick{{/ifequal}}</span>
                         </p>
                     </div>
                 </div>
             {{/each}}
         </div>
-        <a href="https://spotify.com" class="button" target="_blank" rel="noopener noreferrer">Check out our music playlists on Spotify!</a>
+        <a href="https://spotify.com" class="button" target="_blank" rel="noopener noreferrer">{{spotify}}</a>
         <hr />
     </div>
 </section>

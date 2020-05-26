@@ -9,17 +9,17 @@
                 </div>
                 <div class="event-content">
                     <div class="cta">
-                        <div class="future">{{#ifequal language 'fr'}}Join us LIVE{{else}}Join us LIVE{{/ifequal}}</div>
-                        <div class="now">{{#ifequal language 'fr'}}happening now LIVE{{else}}happening now LIVE{{/ifequal}}</div>
+                        <div class="future">{{#ifequal ../language 'fr'}}Soyez des nôtres{{else}}Join us LIVE{{/ifequal}}</div>
+                        <div class="now">{{#ifequal ../language 'fr'}}Diffusion en cours{{else}}happening now LIVE{{/ifequal}}</div>
                     </div>
                     <div class="date">{{formattedDate}}</div>
                     <div class="title"><a href="{{operatorPage}}" target="_blank" rel="noopener nofollow">{{title}}</a></div>
-                    {{#if operator}}<div class="operator">{{#ifequal language 'fr'}}with{{else}}with{{/ifequal}} {{operator}}</div>{{/if}}
+                    {{#if operator}}<div class="operator">{{operator}}</div>{{/if}}
                     {{#if link}}
-                    <div class="tunein"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Tune in now{{else}}Tune in now{{/ifequal}}</a></div>
-                    <div class="watchnow"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal language 'fr'}}Watch now{{else}}Watch now{{/ifequal}}</a></div>
+                    <div class="tunein"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal ../language 'fr'}}Tune in now{{else}}Tune in now{{/ifequal}}</a></div>
+                    <div class="watchnow"><a href="{{link}}" target="_blank" rel="noopener nofollow">{{#ifequal ../language 'fr'}}Watch now{{else}}Watch now{{/ifequal}}</a></div>
                     {{/if}}
-                    {{#if ICSFile}}<div class="icslink"><a href="/assets/events/ics/{{ICSFile}}">{{#ifequal language 'fr'}}Add to calendar{{else}}Add to calendar{{/ifequal}}</a></div>{{/if}}
+                    {{#if ICSFile}}<div class="icslink"><a href="/assets/events/ics/{{ICSFile}}">{{#ifequal ../language 'fr'}}Ajouter au calendrier{{else}}Add to calendar{{/ifequal}}</a></div>{{/if}}
                 </div>
             </div>
             {{/each}}
