@@ -179,7 +179,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "interpolated",
-              "address": "57 Acadie St., Bouctouche",
+              "address": "232 Des Huîtres Rd., Haut-Shippagan",
               "content": "Get me to the glamp ground. I need to get out of my house!",
               "name": "Cielo Glamping Maritime",
               "image": "Cielo Glamping.jpg",
@@ -278,7 +278,7 @@ const mapdata = {
               "content": "Brut IPA #3 is my go-to summer beer. I can't wait to grab a couple bottles and cozy up by the campfire.",
               "name": "Les Brasseurs du Petit-Sault",
               "image": "Les Brasseurs.jpg",
-              "url": "https://www.facebook.com/Petit.Sault/"
+              "url": "https://www.petitsault.com/home"
             },
             "geometry": {
               "coordinates": [
@@ -333,7 +333,7 @@ const mapdata = {
               "name": "Wilson's Sporting Camps",
               "content": "I know there's an Atlantic salmon with my name on it this year. I can't wait to get out on the river at Wilson's. ",
               "image": "Wilsons Sporting Camps.jpg",
-              "url": "https://www.facebook.com/WilsonsCamps/"
+              "url": "https://wilsonscamps.nb.ca/"
             },
             "geometry": {
               "coordinates": [
