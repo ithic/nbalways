@@ -75,6 +75,11 @@ header {
     height: calc(100vh - 4em);
     padding: 1.2em 2.833333333em;
     overflow: hidden;
+    .small-break {
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
     .dark {
         background: black;
     }
@@ -526,6 +531,11 @@ section.escape {
 
 section.crowdriff {
     font-family: 'montserrat';
+    @media (max-width: 767px) {
+        button.loadMore .loadMore__text {
+            font-size: 1em !important;
+        }
+    }
 }
 
 .block {
@@ -749,9 +759,13 @@ section.map {
         background: var(--accent-color);
         color: white;
         font-weight: bold;
-        right: auto;
-        left: 100%;
+        left: auto;
+        right: 0;
         border-radius: 0;
+        @media (min-width: 768px) {
+            left: 100%;
+            right: auto;
+        }
     }
     .mapboxgl-popup {
         animation: fadein 0.2s;
