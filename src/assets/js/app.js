@@ -124,7 +124,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "name": "Fundy National Park",
-              "address": "8642 Route 114, Alma, NB",
+              "address": "8642 Route 114, Alma",
               "content": "We're hoping to snag one of the Yurts at Fundy and dine al fresco by the ocean our whole time there. ",
               "image": "Fundy National Park.jpg",
               "url": "https://www.pc.gc.ca/en/pn-np/nb/fundy"
@@ -142,7 +142,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "name": "Ministers Island",
-              "address": "NB",
+              "address": "",
               "content": "Van Horne Estate was the original physical distancing trend setter, can't wait for the next low tide to drive across the ocean for a visit! ",
               "image": "Ministers Island.jpg",
               "url": "https://www.ministersisland.net/"
@@ -160,7 +160,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "57 Acadie St., Bouctouche, NB",
+              "address": "57 Acadie St., Bouctouche",
               "content": "I can already hear the music! The contagious Acadian joie de vivre is exactly what we need this summer at le Pays de la Sagouine. ",
               "name": "Le Pays de la Sagouine",
               "image": "Le Pays de la Sagouine.jpg",
@@ -179,7 +179,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "interpolated",
-              "address": "57 Acadie St., Bouctouche, NB",
+              "address": "57 Acadie St., Bouctouche",
               "content": "Get me to the glamp ground, I need to get out of my house!",
               "name": "Cielo Glamping Maritime",
               "image": "Cielo Glamping.jpg",
@@ -198,7 +198,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "860 Front Mountain Road, Moncton, NB",
+              "address": "860 Front Mountain Road, Moncton",
               "content": "Looking forward to raising a glass with some of the nicest view of the city at Magnetic Hill Winery.",
               "name": "Magnetic Hill Winery",
               "image": "Magnetic Hill Winery.jpg",
@@ -217,7 +217,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "220 King Street, Saint Andrews, NB",
+              "address": "220 King Street, Saint Andrews",
               "content": "Excited to wander the beautiful gardens at Kingsbrae and enjoy the magic of the blossoms (also the perfect backdrop for IG shots)!",
               "name": "Kingsbrae Garden",
               "image": "Kingsbrae.jpg",
@@ -236,7 +236,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "interpolated",
-              "address": "5804 NB-102, Prince William, NB",
+              "address": "5804 NB-102, Prince William",
               "content": "Stepping back into time at Kings Landing is just the right getaway I've been dreaming of. ",
               "name": "Kings Landing",
               "image": "Kings Landing.jpg",
@@ -255,7 +255,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "415 Main St, St. Martins, NB",
+              "address": "415 Main St, St. Martins",
               "content": "Eating seafood on the ocean floor is next level and a meal we will never forget. Looking forward to trying epic culinary experiences this summer.",
               "name": "Red Rock Adventure",
               "image": "Red Rock.jpg",
@@ -274,7 +274,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "45 De l'Église St., Edmundston, NB",
+              "address": "45 De l'Église St., Edmundston",
               "content": "Brut IPA #3 is my go-to summer beer,  I can't wait to grab a couple bottles and cozy up by the campfire. ",
               "name": "Les Brasseurs du Petit-Sault",
               "image": "Les Brasseurs.jpg",
@@ -293,7 +293,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "street",
-              "address": "1 Lower Campus Road, St. Andrews, NB",
+              "address": "1 Lower Campus Road, St. Andrews",
               "content": "We miss Loki & Snorkel! Can't wait to see those furry faces.",
               "name": "Huntsman Fundy Discovery Aquarium",
               "image": "Huntsman Fundy Discovery Aquarium.jpg",
@@ -313,7 +313,7 @@ const mapdata = {
             "properties": {
               "content": "A highlight reel of NB beer and wine is what I'm looking forward to most, excited to see what Uncorked will share!",
               "name": "Uncorked Tours",
-              "address": "3-139 Leinster St. Saint John, NB",
+              "address": "3-139 Leinster St. Saint John",
               "image": "uncorked.jpg",
               "url": "https://www.uncorkednb.com/"
             },
@@ -329,7 +329,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "address": "McNamee, NB",
+              "address": "McNamee",
               "name": "Wilson's Sporting Camps",
               "content": "I know there's an Atlantic salmon with my name on it this year. I can't wait to get out on the river at Wilson's. ",
               "image": "Wilsons Sporting Camps.jpg",
@@ -353,7 +353,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "name": "Île Ministers",
-              "address": "N.-B.",
+              "address": "",
               "content": "Le luxueux domaine de Van Horne aurait été un endroit rêvé pour s'isoler! On attend impatiemment la prochaine marée basse pour s'y rendre.",
               "image": "Ministers Island.jpg",
               "url": "https://www.ministersisland.net/"
@@ -371,7 +371,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "street",
-              "address": "1 Lower Campus Road | St. Andrews, N.-B.",
+              "address": "1 Lower Campus Road, St. Andrews",
               "content": "Nous avons hâte de revoir Loki et Snorkel, les gentils phoques de l'aquarium.",
               "name": "Aquarium-découverte Fundy de Huntsman",
               "image": "Huntsman Fundy Discovery Aquarium.jpg",
@@ -389,7 +389,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "address": "McNamee, N.-B.",
+              "address": "McNamee",
               "name": "Wilson's Sporting Camps",
               "content": "C'est cette année que ça se passe, je vais enfin attraper un saumon. Très hâte d'aller pêcher sur la Miramichi à la pourvoirie Wilson's.",
               "image": "Wilsons Sporting Camps.jpg",
@@ -409,7 +409,7 @@ const mapdata = {
             "properties": {
               "content": "On se planifie une visite-dégustation avec Uncorked pour redécouvrir les bières et les vins de chez nous!",
               "name": "Uncorked Tours",
-              "address": "139 rue Leinster, app. 3, Saint John, N.-B.",
+              "address": "139 rue Leinster, app. 3, Saint John",
               "image": "uncorked.jpg",
               "url": "https://www.uncorkednb.com/"
             },
@@ -426,7 +426,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "57, rue Acadie, Bouctouche, N.-B.",
+              "address": "57, rue Acadie, Bouctouche",
               "content": "On entend la musique jusqu'ici! Le Pays de la Sagouine est un incontournable de la joie de vivre acadienne; en plein ce qu'il nous faut cet été!",
               "name": "Le Pays de la Sagouine",
               "image": "Le Pays de la Sagouine.jpg",
@@ -445,7 +445,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "interpolated",
-              "address": "232, ch. des Huîtres, Haut-Shippagan, N.-B.",
+              "address": "232, ch. des Huîtres, Haut-Shippagan",
               "content": "Il est grand temps d'aller au terrain de « glamping », ça fera du bien de sortir de la maison!",
               "name": "Cielo Glamping Maritime",
               "image": "Cielo Glamping.jpg",
@@ -464,7 +464,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "name": "Parc national Fundy",
-              "address": "8642, route 114, Alma, N.-B.",
+              "address": "8642, route 114, Alma",
               "content": "Nous espérons réserver une des yourtes à Fundy et manger au bord de l'océan pendant tout notre séjour. ",
               "image": "Fundy National Park.jpg",
               "url": "https://www.pc.gc.ca/fr/pn-np/nb/fundy"
@@ -482,7 +482,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "415, rue Main, St. Martins, N.-B.",
+              "address": "415, rue Main, St. Martins",
               "content": "Notre inoubliable repas de fruits de mer sur le fond de l'océan l'an dernier nous donne le goût de vivre d'autres expériences gourmandes cet été.",
               "name": "Red Rock Adventure",
               "image": "Red Rock.jpg",
@@ -501,7 +501,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "interpolated",
-              "address": "5804, route 102, Prince William, N.-B.",
+              "address": "5804, route 102, Prince William",
               "content": "On se croirait dans un roman d'époque. Kings Landing est parfait pour faire un voyage dans le temps.",
               "name": "Kings Landing",
               "image": "Kings Landing.jpg",
@@ -520,7 +520,7 @@ const mapdata = {
             "type": "Feature",
             "properties": {
               "accuracy": "point",
-              "address": "45, rue de l'Église, Edmundston, N.-B.",
+              "address": "45, rue de l'Église, Edmundston",
               "content": "Ma bière de prédilection pour l'été, c'est la Brut IPA #3. J'ai tellement hâte d'en boire autour du feu.",
               "name": "Les Brasseurs du Petit-Sault",
               "image": "Les Brasseurs.jpg",
