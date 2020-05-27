@@ -143,7 +143,7 @@ const mapdata = {
             "properties": {
               "name": "Ministers Island",
               "address": "",
-              "content": "Van Horne Estate was the original physical distancing trend setter, can't wait for the next low tide to drive across the ocean for a visit! ",
+              "content": "Van Horne Estate was the original physical distancing trend setter. Can't wait for the next low tide to drive across the ocean for a visit! ",
               "image": "Ministers Island.jpg",
               "url": "https://www.ministersisland.net/"
             },
@@ -180,7 +180,7 @@ const mapdata = {
             "properties": {
               "accuracy": "interpolated",
               "address": "57 Acadie St., Bouctouche",
-              "content": "Get me to the glamp ground, I need to get out of my house!",
+              "content": "Get me to the glamp ground. I need to get out of my house!",
               "name": "Cielo Glamping Maritime",
               "image": "Cielo Glamping.jpg",
               "url": "https://en.glampingcielo.com/"
@@ -199,7 +199,7 @@ const mapdata = {
             "properties": {
               "accuracy": "point",
               "address": "860 Front Mountain Road, Moncton",
-              "content": "Looking forward to raising a glass with some of the nicest view of the city at Magnetic Hill Winery.",
+              "content": "Looking forward to raising a glass with some of the nicest views of the city at Magnetic Hill Winery.",
               "name": "Magnetic Hill Winery",
               "image": "Magnetic Hill Winery.jpg",
               "url": "https://magnetichillwinery.com/"
@@ -237,7 +237,7 @@ const mapdata = {
             "properties": {
               "accuracy": "interpolated",
               "address": "5804 NB-102, Prince William",
-              "content": "Stepping back into time at Kings Landing is just the right getaway I've been dreaming of. ",
+              "content": "Stepping back in time at Kings Landing is just the getaway I've been dreaming of. ",
               "name": "Kings Landing",
               "image": "Kings Landing.jpg",
               "url": "https://kingslanding.nb.ca/"
@@ -275,7 +275,7 @@ const mapdata = {
             "properties": {
               "accuracy": "point",
               "address": "45 De l'Église St., Edmundston",
-              "content": "Brut IPA #3 is my go-to summer beer,  I can't wait to grab a couple bottles and cozy up by the campfire. ",
+              "content": "Brut IPA #3 is my go-to summer beer. I can't wait to grab a couple bottles and cozy up by the campfire.",
               "name": "Les Brasseurs du Petit-Sault",
               "image": "Les Brasseurs.jpg",
               "url": "https://www.facebook.com/Petit.Sault/"
@@ -311,7 +311,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "content": "A highlight reel of NB beer and wine is what I'm looking forward to most, excited to see what Uncorked will share!",
+              "content": "A highlight reel of NB beer and wine is what I'm looking forward to most &ndash; excited to see what Uncorked will share!",
               "name": "Uncorked Tours",
               "address": "3-139 Leinster St. Saint John",
               "image": "uncorked.jpg",
