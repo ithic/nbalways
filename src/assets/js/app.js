@@ -101,7 +101,7 @@ var bounds = [
 ];
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc',
+    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc/draft',
     center: lastCoordinates, // starting position [lng, lat],
     zoom: lastZoom,
     maxBounds: bounds
