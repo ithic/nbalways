@@ -1,0 +1,34 @@
+<section class="blog">
+    <div class="content-container">
+        {{{ blog.introContent }}}
+        <div class="blogitems">
+            {{#each blog.posts}}
+                <div class="post">
+                    <div class="image">
+                        <img src="/assets/img/{{image}}" alt="{{title}}">
+                    </div>
+                    <div class="content">
+                        <h3 class="serif title">
+                            <strong>{{title}}</strong>
+                            <span class="with spaced sans-serif tiny">{{#ifequal ../language 'fr'}}avec{{else}}with{{/ifequal}}</span>
+                            <span class="attribution">{{host}}</span>
+                        </h3>
+                        <hr />
+                        <div class="excerpt sans-serif tiny">
+                            {{excerpt}}
+                        </div>
+                        <a class="tiny" href="{{url}}" target="_blank" rel="noopener noreferrer">
+                            {{#ifequal ../language 'fr'}}more >{{else}}more >{{/ifequal}}
+                        </a>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="external">
+            {{#each blog.links}}
+                <a href="{{url}}" class="button" target="_blank" rel="noopener noreferrer">{{title}}</a>
+            {{/each}}
+        </div>
+        <hr />
+    </div>
+</section>

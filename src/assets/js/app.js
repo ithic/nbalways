@@ -76,12 +76,12 @@ $('#newsletter-form').validate({
 const shareMessage = {
     en: 'All our favourite places are waiting for us. Where will you go first?',
     fr: 'Tellement de choses nous ont manqué. Vos lieux préférés n’attendent que vous. #NBAlways'
-}
+};
 
 const shareURL = {
     en: 'https://nbalways.ca',
     fr: 'https://nbtoujours.ca'
-}
+};
 
 $('.facebook-share-button').click((event) => {
     event.preventDefault();
@@ -576,7 +576,7 @@ const mapdata = {
         ],
         "type": "FeatureCollection"
       }
-}
+};
 
 var tooltip = null;
 
@@ -671,7 +671,7 @@ map.on('load', () => {
 
     layer.on('mouseleave', 'places', (e) => {
       tooltip.remove();
-    })
+    });
 
     map.on('mouseenter', 'places', () => {
         map.getCanvas().style.cursor = 'pointer';
