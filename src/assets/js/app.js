@@ -449,23 +449,6 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "name": "Beaverbrook Art Gallery",
-              "address": "703 Queen Street, Fredericton",
-              "content": "I think Salvador Dali's Santiago el Grande speaks for itself. The Beaverbrook Art Gallery is must!",
-              "image": "beaverbrook.jpg",
-              "url": "http://beaverbrookartgallery.org/en/"
-            },
-            "geometry": {
-              "coordinates": [
-                -66.6377392,
-                45.9599848
-              ],
-              "type": "Point"
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
               "name": "Honeybeans Cafe",
               "address": "180 Water St, St. Andrews",
               "content": "The fresh puff pastries combined with the infectious smiles of the staff makes Honeybeans Cafe absolutely essential. ",
@@ -483,7 +466,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "name": "New River Beach Provinvial Park",
+              "name": "New River Beach Provincial Park",
               "address": "78 New River Beach Rd",
               "content": "New River Beach is a rare gem for camping right off the beach. Our family loves this little getaway on the Bay of Fundy. ",
               "image": "2016-new_river_beach-photo_by_aaron_mckenzie_fraser_50.jpg",
@@ -858,23 +841,6 @@ const mapdata = {
               "coordinates": [
                 -66.6524654,
                 45.9764603
-              ],
-              "type": "Point"
-            }
-          },
-          {
-            "type": "Feature",
-            "properties": {
-              "name": "Galerie d'art Beaverbrook",
-              "address": "703, rue Queen, Fredericton",
-              "content": "La Galerie d'art Beaverbrook contient tellement de trésors à découvrir. L'immense tableau de Salvador Dali m'impressionne chaque fois.",
-              "image": "beaverbrook.jpg",
-              "url": "http://beaverbrookartgallery.org/fr/"
-            },
-            "geometry": {
-              "coordinates": [
-                -66.6377392,
-                45.9599848
               ],
               "type": "Point"
             }
