@@ -707,7 +707,10 @@ section.map {
         }
         .mapboxgl-popup-content {
             padding: 0;
-            border-top-left-radius: 5em;
+            border-top-left-radius: 0;
+            @media (min-width: 1024px) {
+                border-top-left-radius: 5em;
+            }
         }
         .popup-content {
             text-align: left;
