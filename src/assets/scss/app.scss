@@ -544,7 +544,12 @@ section.crowdriff {
 
 .block {
     display: block;
+
+    &.center {
+        margin: 1em auto;
+    }
 }
+
 
 .callout {
     display: block;

@@ -5,7 +5,7 @@
             {{#each blog.posts}}
                 <div class="post">
                     <div class="image">
-                        <img src="/assets/img/{{image}}" alt="{{title}}">
+                        <a href="{{url}}" target="_blank" rel="noopener noreferrer"><img src="/assets/img/{{image}}" alt="{{title}}"></a>
                     </div>
                     <div class="content">
                         <h3 class="serif title">
@@ -18,7 +18,7 @@
                             {{excerpt}}
                         </div>
                         <a class="tiny" href="{{url}}" target="_blank" rel="noopener noreferrer">
-                            {{#ifequal ../language 'fr'}}more >{{else}}more >{{/ifequal}}
+                            {{#ifequal ../language 'fr'}}Détails >{{else}}more >{{/ifequal}}
                         </a>
                     </div>
                 </div>
