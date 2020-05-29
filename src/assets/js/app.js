@@ -960,7 +960,7 @@ map.on('load', () => {
         'type': 'geojson',
         'data': mapdata[document.documentElement.lang.toLowerCase()],
         'cluster': true,
-        clusterRadius: 30
+        clusterRadius: 50
     });
     var layer = map.addLayer({
         'id': 'places',
@@ -988,14 +988,14 @@ map.on('load', () => {
         var offsetY = 0.02;
         var anchor = 'bottom';
         var maxWidth = '300px';
-        if (window.innerWidth >= 1024) {
+        
+        if (!e.features[0].properties.cluster) {
+          if (window.innerWidth >= 1024) {
             offsetX = 0.05;
             offsetY = 0;
             anchor = 'bottom-left';
             maxWidth = 'none';
-        }
-        
-        if (!e.features[0].properties.cluster) {
+          }
           map.flyTo({
               center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
               zoom: 12,
