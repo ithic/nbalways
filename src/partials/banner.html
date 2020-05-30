@@ -1,0 +1,12 @@
+<div class="banner">
+    <img 
+        srcset="/assets/img/{{banner.bannerLarge}} 1920w, /assets/img/{{banner.bannerMedium}} 1024w, /assets/img/{{banner.bannerSmall}} 375w"
+        sizes="(max-width: 768px) 375px,
+               (max-width: 1280) 1024px,
+               1920px"
+        src="/assets/img/{{banner.bannerLarge}}"
+    >
+    <div class="content" style="color: {{banner.color}}">
+        {{{banner.content}}}
+    </div>
+</div>

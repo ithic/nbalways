@@ -24,7 +24,12 @@
                 </div>
             {{/each}}
         </div>
-        <a href="https://spotify.com" class="button" target="_blank" rel="noopener noreferrer">{{spotify}}</a>
+        {{{spotifyCTA}}}
+        <div class="external">
+            {{#each spotify}}
+                <a href="{{url}}" class="button" target="_blank" rel="noopener noreferrer">{{title}}</a>
+            {{/each}}
+        </div>
         <hr />
     </div>
 </section>

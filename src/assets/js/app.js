@@ -76,12 +76,12 @@ $('#newsletter-form').validate({
 const shareMessage = {
     en: 'All our favourite places are waiting for us. Where will you go first?',
     fr: 'Tellement de choses nous ont manqué. Vos lieux préférés n’attendent que vous. #NBAlways'
-}
+};
 
 const shareURL = {
     en: 'https://nbalways.ca',
     fr: 'https://nbtoujours.ca'
-}
+};
 
 $('.facebook-share-button').click((event) => {
     event.preventDefault();
@@ -101,7 +101,7 @@ var bounds = [
 ];
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc',
+    style: 'mapbox://styles/jrrankin/ck9x4ba8z0r501ipas6h035kc/draft',
     center: lastCoordinates, // starting position [lng, lat],
     zoom: lastZoom,
     maxBounds: bounds
@@ -343,7 +343,177 @@ const mapdata = {
               "type": "Point"
             },
             "id": "postcode.18004809234808030"
-          }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Arpin Canoe Restigouche ",
+              "address": "8 Arpin St., Kedgwick River",
+              "content": "There's nothing like paddling the Restigouche ... hands down the prettiest scenery in the province.",
+              "image": "arpin_canoe_.jpg",
+              "url": "https://www.canoerestigouche.ca/en"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.4932651,
+                47.6621316
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Villégiature Deux Rivières Resort",
+              "address": "100 Deux Rivieres St, Tracadie",
+              "content": "Our own little slice of paradise! Who says we need to travel far to experience a world-class resort? ",
+              "image": "Villegiature Deux Rivieres Resort.jpg",
+              "url": "http://villegiature-deux-rivieres-resort.gonewbrunswick.com/en/"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.9002743,
+                47.5200665
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Mactaquac Provincial Park",
+              "address": "1265 NB-105, Mactaquac",
+              "content": "One of the best spots to enjoy the Saint John river! Can't wait to take a dip in the freshwater and retreat back to a cozy campsite this summer. ",
+              "image": "Mactaquac.jpg",
+              "url": "https://parcsnbparks.ca/Mactaquac"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.8970321,
+                45.9611998
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Youghall Beach",
+              "address": "1525 Queen Elizabeth Dr., Bathurst",
+              "content": "Ever wonder why NB is famous for its beaches? This is IT. It has become our family tradition to hit the beach here every summer!  ",
+              "image": "Bathurst - Youghall Beach-0368.jpg",
+              "url": "https://www.bathurst.ca/en/services/recreation-and-tourism/74/youghall-beach"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.6260464,
+                47.657714
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Hopewell Rocks Park",
+              "address": "131 Discovery Rd., Hopewell Cape",
+              "content": "Each time I walk the ocean floor I'm in awe! Exploring the rocks at high tide will be the first thing on my bucket list this summer.",
+              "image": "hopewell.jpg",
+              "url": "https://www.thehopewellrocks.ca/index.php/en/home"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5808473,
+                45.8171575
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Shake Shed",
+              "address": "230 Main St, Fredericton",
+              "content": "Absolutely LIVING for the feature flavour drops every few weeks at the Shake Shed! But when in doubt - the birthday cake shake never fails! ",
+              "image": "Shake-Shed.jpg",
+              "url": "https://www.theshakeshed.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.6524654,
+                45.9764603
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Honeybeans Cafe",
+              "address": "180 Water St, St. Andrews",
+              "content": "The fresh puff pastries combined with the infectious smiles of the staff makes Honeybeans Cafe absolutely essential. ",
+              "image": "Honeybeans.jpg",
+              "url": "https://www.facebook.com/honeybeanscafe/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.0558196,
+                45.0742426
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "New River Beach Provincial Park",
+              "address": "78 New River Beach Rd",
+              "content": "New River Beach is a rare gem for camping right off the beach. Our family loves this little getaway on the Bay of Fundy. ",
+              "image": "2016-new_river_beach-photo_by_aaron_mckenzie_fraser_50.jpg",
+              "url": "https://parcsnbparks.ca/delaplageNewRiver?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.5318122,
+                45.1364726
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parlee Beach Provincial Park",
+              "address": "45 Parlee Beach Rd. Pointe-du-Chêne",
+              "content": "Parlee Beach has easily become the quintessential spot for a warm summer day. I'm planning for many sunset walks here this summer! ",
+              "image": "parlee option1.jpg",
+              "url": "https://parcsnbparks.ca/ParleeBeach?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5119872,
+                46.2397022
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Mount Carleton Provincial Park",
+              "address": "Saint-Quentin",
+              "content": "Mount Sagamook is easily the most challenging AND rewarding hike in the province. That spectacular view from the summit makes it all worth it!",
+              "image": "Mount Carleton.jpg",
+              "url": "https://parcsnbparks.ca/MountCarleton?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.8970546,
+                47.4176151
+              ],
+              "type": "Point"
+            }
+          },
         ],
         "type": "FeatureCollection"
       },
@@ -572,11 +742,181 @@ const mapdata = {
               "type": "Point"
             },
             "id": "ecc504a4de15458bdac1f942cb5815a4"
-          }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Arpin canoë Restigouche",
+              "address": "8, rue Arpin, Kedgwick River",
+              "content": "Le paysage de la rivière Restigouche ressemble aux tableaux des grands peintres. Je rêve de retourner y faire du canot.",
+              "image": "arpin_canoe_.jpg",
+              "url": "https://www.canoerestigouche.ca/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.4932651,
+                47.6621316
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Villégiature Deux Rivières Resort",
+              "address": "100, rue Deux Rivières, Tracadie",
+              "content": "Notre petit coin de paradis préféré. Pas besoin d'aller loin pour retrouver l'ambiance d'un centre de villégiature!",
+              "image": "Villegiature Deux Rivieres Resort.jpg",
+              "url": "http://villegiature-deux-rivieres-resort.gonewbrunswick.com/en/"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.9002743,
+                47.5200665
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial Mactaquac",
+              "address": "1265, route 105, Mactaquac",
+              "content": "Un de mes endroits favoris le long de la rivière Saint-Jean. À moi les journées de baignade et les soirées autour du feu au camping!",
+              "image": "Mactaquac.jpg",
+              "url": "https://parcsnbparks.ca/Mactaquac"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.8970321,
+                45.9611998
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc de la plage Youghall",
+              "address": "1525, prom. Queen Elizabeth, Bathurst",
+              "content": "Pas étonnant que le Nouveau-Brunswick soit réputé pour ses plages. Youghall fait partie de nos traditions familiales de l'été.",
+              "image": "Bathurst - Youghall Beach-0368.jpg",
+              "url": "https://www.bathurst.ca/fr/services/recreation-and-tourism/74/youghall-beach"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.6260464,
+                47.657714
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc des rochers Hopewell",
+              "address": "131, chemin Discovery, Hopewell Cape",
+              "content": "Le phénomène des marées me fascine toujours autant! Cet été je prévois marcher sur le fond marin et faire du kayak autour des rochers Hopewell.",
+              "image": "hopewell.jpg",
+              "url": "https://rochershopewellrocks.ca/index.php/fr/home"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5808473,
+                45.8171575
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Shake Shed",
+              "address": "230, rue Main, Fredericton",
+              "content": "Je salive rien qu'à penser aux saveurs de la semaine des laits frappés gourmets de Shake Shed. J'ai bien l'intention de me payer la traite cet été!",
+              "image": "Shake-Shed.jpg",
+              "url": "https://www.theshakeshed.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.6524654,
+                45.9764603
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Honeybeans Cafe",
+              "address": "180, rue Water, St. Andrews",
+              "content": "Avec ses gâteries savoureuses et son personnel chaleureux, le café Honeybeans n'est pas un luxe, c'est un besoin essentiel! ",
+              "image": "Honeybeans.jpg",
+              "url": "https://www.facebook.com/honeybeanscafe/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.0558196,
+                45.0742426
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial de la plage New River",
+              "address": "78, ch. New River Beach",
+              "content": "Le parc de la plage New River Beach est l'endroit préféré de ma famille pour camper au bord de la baie de Fundy. ",
+              "image": "2016-new_river_beach-photo_by_aaron_mckenzie_fraser_50.jpg",
+              "url": "https://parcsnbparks.ca/delaplageNewRiver?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.5318122,
+                45.1364726
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial de la plage Parlee",
+              "address": "45, rue Parlee Beach, Pointe-du-Chêne",
+              "content": "La plage Parlee est ma destination de rêve des beaux jours d'été. Je pourrais y rester du lever au coucher du soleil!",
+              "image": "parlee option1.jpg",
+              "url": "https://parcsnbparks.ca/ParleeBeach?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5119872,
+                46.2397022
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial Mont-Carleton",
+              "address": "Saint-Quentin",
+              "content": "Le sentier du mont Sagamook est une des randonnées les plus exigeantes de la province. La vue spectaculaire au sommet vaut largement l'effort.",
+              "image": "Mount Carleton.jpg",
+              "url": "https://parcsnbparks.ca/MountCarleton?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.8970546,
+                47.4176151
+              ],
+              "type": "Point"
+            }
+          },
         ],
         "type": "FeatureCollection"
       }
-}
+};
 
 var tooltip = null;
 
@@ -586,7 +926,7 @@ map.on('load', () => {
         'type': 'geojson',
         'data': mapdata[document.documentElement.lang.toLowerCase()],
         'cluster': true,
-        clusterRadius: 80
+        clusterRadius: 50
     });
     var layer = map.addLayer({
         'id': 'places',
@@ -614,18 +954,19 @@ map.on('load', () => {
         var offsetY = 0.02;
         var anchor = 'bottom';
         var maxWidth = '300px';
-        if (window.innerWidth >= 1024) {
+        
+        if (!e.features[0].properties.cluster) {
+          if (window.innerWidth >= 1024) {
             offsetX = 0.05;
             offsetY = 0;
             anchor = 'bottom-left';
             maxWidth = 'none';
-        }
-        map.flyTo({
-            center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
-            zoom: 12,
-            essential: true // this animation is considered essential with respect to prefers-reduced-motion
-        });
-        if (!e.features[0].properties.cluster) {
+          }
+          map.flyTo({
+              center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
+              zoom: 12,
+              essential: true // this animation is considered essential with respect to prefers-reduced-motion
+          });
           var popup = new mapboxgl.Popup({anchor: anchor, maxWidth: maxWidth, className: 'window'})
               .setLngLat(coordinates)
               .setHTML(`<div class="popup-content"><p class="main">${content}</p><div class="address"><svg class="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 75.01"><path d="M25.09,0l-.21,0-.07,0A25.5,25.5,0,0,0,3.19,37.91V38a1.91,1.91,0,0,0,.22.53l0,0L23.59,73.94a2.1,2.1,0,0,0,2.87.79,2.07,2.07,0,0,0,.79-.79L47.09,38.6l.13-.19a2,2,0,0,0,.15-.41,1.34,1.34,0,0,0,.07-.18,25.75,25.75,0,0,0,3.15-12.19A25.49,25.49,0,0,0,25.31,0Zm.19,10.22a14.68,14.68,0,0,1,0,29.35,14.68,14.68,0,0,1,0-29.35Z"/></svg><span><a href="${url}" target="_blank" rel="noopener nofollow">${name}</a></span><span>${address}</span></div><div class="image"><img src="/assets/img/map/${image}" /></div>`)
@@ -640,6 +981,12 @@ map.on('load', () => {
                   essential: true
               });
           });
+        } else {
+          map.flyTo({
+            center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
+            zoom: lastZoom + 3,
+            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+        });
         }
     });
 
@@ -671,7 +1018,7 @@ map.on('load', () => {
 
     layer.on('mouseleave', 'places', (e) => {
       tooltip.remove();
-    })
+    });
 
     map.on('mouseenter', 'places', () => {
         map.getCanvas().style.cursor = 'pointer';
