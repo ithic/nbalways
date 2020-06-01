@@ -1269,6 +1269,9 @@ body.page {
     header {
         height: auto;
     }
+    h2 {
+        font-size: 2em;
+    }
     main.content {
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
     }
