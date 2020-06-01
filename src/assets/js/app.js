@@ -972,7 +972,12 @@ map.on('load', () => {
               .setHTML(`<div class="popup-content"><p class="main">${content}</p><div class="address"><svg class="pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 75.01"><path d="M25.09,0l-.21,0-.07,0A25.5,25.5,0,0,0,3.19,37.91V38a1.91,1.91,0,0,0,.22.53l0,0L23.59,73.94a2.1,2.1,0,0,0,2.87.79,2.07,2.07,0,0,0,.79-.79L47.09,38.6l.13-.19a2,2,0,0,0,.15-.41,1.34,1.34,0,0,0,.07-.18,25.75,25.75,0,0,0,3.15-12.19A25.49,25.49,0,0,0,25.31,0Zm.19,10.22a14.68,14.68,0,0,1,0,29.35,14.68,14.68,0,0,1,0-29.35Z"/></svg><span><a href="${url}" target="_blank" rel="noopener nofollow">${name}</a></span><span>${address}</span></div><div class="image"><img src="/assets/img/map/${image}" /></div>`)
               .addTo(map);                
           
-          ga('send', 'event', 'Map', 'show', name);
+          //ga('send', 'event', 'Map', 'show', name);
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            'event': 'Map',
+            'show': name
+          });
           
           popup.on('close', () => {
               map.flyTo({
@@ -1074,5 +1079,10 @@ function startAudio(player) {
     $(player).addClass('playing');
     audio.play();
     
-    ga('send', 'event', 'Sounds', 'play', $(player).find('audio').attr('id'));
+    //ga('send', 'event', 'Sounds', 'play', $(player).find('audio').attr('id'));
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'Sounds',
+      'play': $(player).find('audio').attr('id')
+    });
 }
