@@ -1,4 +1,4 @@
-<header>
+<header id="hero">
     <nav>
       <a href="/" class="logo"><img src="assets/img/logo.svg" alt="{{#ifequal language 'fr'}}Accueil{{else}}Home{{/ifequal}}" /></a>
       <div class="right">
@@ -31,7 +31,7 @@
   {{> calendar }}
   {{> banner banner=exploreBanner}}
   {{> blog }}
-  <section class="escape">
+  <section id="escape" class="escape">
     <div class="content-container">
       <h2 class="serif"><strong>{{zoomCTA}}</strong></h2>
       <p class="small sans-serif">{{zoomTagline}}</p>
@@ -54,7 +54,7 @@
       <hr />
     </div>
   </section>
-  <section class="crowdriff">
+  <section id="crowdriff" class="crowdriff">
     <div class="content-container">
       {{{ crowdriff }}}
     </div>
@@ -62,7 +62,7 @@
       <script id="cr-init__45bd98d8558dfd1f" src="https://starling.crowdriff.com/js/crowdriff.js" lang="{{ language }}" async></script>
     </div>  
   </section>
-  <section class="newsletter">
+  <section id="newsletter" class="newsletter">
     <div class="content-container">
       {{#ifequal language 'fr'}}
       <h2>Abonnez-vous à notre infolettre</h2>
