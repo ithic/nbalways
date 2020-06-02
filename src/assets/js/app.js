@@ -256,9 +256,9 @@ const mapdata = {
             "properties": {
               "accuracy": "point",
               "address": "415 Main St, St. Martins",
-              "content": "Eating seafood on the ocean floor is next level and a meal we will never forget. Looking forward to trying epic culinary experiences this summer.",
+              "content": "The sea caves in St. Martins are amazing. We've been exploring them at low tide, but this summer we'll take a guided kayak tour to see them from the ocean.",
               "name": "Red Rock Adventure",
-              "image": "Red Rock.jpg",
+              "image": "Red-Rock.jpg",
               "url": "https://www.bayoffundyadventures.com/"
             },
             "geometry": {
@@ -653,9 +653,9 @@ const mapdata = {
             "properties": {
               "accuracy": "point",
               "address": "415, rue Main, St. Martins",
-              "content": "Notre inoubliable repas de fruits de mer sur le fond de l'océan l'an dernier nous donne le goût de vivre d'autres expériences gourmandes cet été.",
+              "content": "On adore les cavernes marines de St. Martins! Nous les avons déjà explorées à pied, mais cet été nous ferons une visite guidée en kayak pour les voir à partir de la mer.",
               "name": "Red Rock Adventure",
-              "image": "Red Rock.jpg",
+              "image": "Red-Rock.jpg",
               "url": "https://www.bayoffundyadventures.com/"
             },
             "geometry": {

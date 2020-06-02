@@ -570,6 +570,10 @@ html[lang=fr] section.calendar {
     }
 }
 
+html[lang=fr] section.map .popup-content .main {
+    font-size: 1.25em;
+}
+
 section.newsletter {
     background: var(--accent-color);
     @media (min-width: 1200px) {
