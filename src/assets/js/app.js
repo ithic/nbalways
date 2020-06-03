@@ -1060,6 +1060,31 @@ $(document).ready(() => {
             }
         });
     });
+
+    // Configure live area
+    var events = $('.event');
+    var sortedEvents = events.sort((a, b) => new Date($(b).attr('data-start')) - new Date($(a).attr('data-start')));
+    sortedEvents.each((index, el) => $(el).css('order', index));
+    updateCalendar(sortedEvents);
+    window.setInterval(() => {
+      updateCalendar(sortedEvents);
+    }, 1000);
+
+    function updateCalendar(events) {
+      var now = new Date();
+      events.each((index, el) => {
+        var startDate = new Date($(el).attr('data-start'));
+        var endDate = new Date($(el).attr('data-end'));
+        if (now > startDate && now < endDate) {
+          $(el).addClass('live');
+        }
+        if (now > endDate) {
+          $(el).removeClass('live');
+          $(el).addClass('recorded');
+        }
+      });
+    }
+    
 });
 
 function stopAudio(player) {
