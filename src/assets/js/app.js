@@ -93,10 +93,10 @@ $('.facebook-share-button').click((event) => {
 });
 
 mapboxgl.accessToken = 'pk.eyJ1IjoianJyYW5raW4iLCJhIjoiY2s5dnQ5bjVuMDJzMzNtcnI1dnJuOTlocyJ9.SQv9UqQvK05yKgK9Xgxxrw';
-var lastCoordinates = [-65.4894, 47.4170];
+var lastCoordinates = [-66.2877557, 46.30078]; // 46.30078,-66.2877557
 var lastZoom = 6;
 var bounds = [
-    [-71.7540616, 44.829648], // Southwest coordinates
+    [-71.7540616, 44.4247031], // Southwest coordinates
     [-60.7738239, 48.3619851] // Northeast coordinates
 ];
 const map = new mapboxgl.Map({
