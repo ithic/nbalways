@@ -1064,7 +1064,7 @@ $(document).ready(() => {
     // Configure live area
     var events = $('.event');
     var sortedEvents = events.sort((a, b) => new Date($(b).attr('data-start')) - new Date($(a).attr('data-start')));
-    sortedEvents.each((index, el) => $(el).css('order', index));
+    //sortedEvents.each((index, el) => $(el).css('order', index));
     updateCalendar(sortedEvents);
     window.setInterval(() => {
       updateCalendar(sortedEvents);
