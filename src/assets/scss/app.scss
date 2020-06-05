@@ -570,9 +570,9 @@ html[lang=fr] section.calendar {
     }
 }
 
-html[lang=fr] section.map .popup-content .main {
-    font-size: 1.25em;
-}
+// html[lang=fr] section.map .popup-content .main {
+//     font-size: 1.25em;
+// }
 
 section.newsletter {
     background: var(--accent-color);
@@ -720,6 +720,9 @@ section.map {
             text-align: left;
             display: flex;
             flex-direction: column;
+            .main {
+                font-size: 1.25em;
+            }
             @media (min-width: 1024px) {
                 padding-left: var(--heart-offset);
                 flex-direction: row;

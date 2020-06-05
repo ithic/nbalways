@@ -514,6 +514,295 @@ const mapdata = {
               "type": "Point"
             }
           },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Pizza 13",
+              "address": "100 Main St., Bathurst",
+              "content": "Have been dreaming about ordering the Bayonne pizza from Pizza 13 and having a pizza picnic this summer. Can't wait to get my fix!",
+              "image": "Pizza 13.jpg",
+              "url": "https://pizza13.ca/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.6585421,
+                47.6202446
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Kouchibouguac National Park",
+              "address": "186 Route 117, Kouchibouguac",
+              "content": "So excited to spend my long weekend biking around Kouchibouguac and then taking a dip in the warm waters as the sun sets.",
+              "image": "Kouchibouguac_national_park_red_chairs-2016-13.jpg",
+              "url": "https://www.pc.gc.ca/en/pn-np/nb/kouchibouguac"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.4687812,
+                47.0296744
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Fundy Tide Runners",
+              "address": "16 King St., St. Andrews",
+              "content": "Fundy Tide Runners get us up close and personal with majestic whales, we are so lucky to have the opportunity to experience this in our own backyard!",
+              "image": "Fundy Tide Runners.jpg",
+              "url": "https://www.fundytiderunners.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.0558199,
+                45.0833832
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Murray Beach Provincial Park",
+              "address": "1680 Route 955, Little Shemogue",
+              "content": "I plan on spending many long summer days splashing in the surf and laying in the sun at Murray Beach. ",
+              "image": "Murray Beach.jpg",
+              "url": "https://parcsnbparks.ca/MurrayBeach"
+            },
+            "geometry": {
+              "coordinates": [
+                -63.9811757,
+                46.1774051
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "New Brunswick Botanical Gardens",
+              "address": "15 Principale St., Saint-Jacques",
+              "content": "I love bringing a book into the Botanical Gardens and wandering around searching for the perfect spot to tuck away and read while surrounded by the beauty of the gardens.",
+              "image": "New Brunswick Botanical Gardens.jpg",
+              "url": "https://jardinnbgarden.com/en/"
+            },
+            "geometry": {
+              "coordinates": [
+                -63.9811757,
+                46.1674051
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Ocean Surf RV Park",
+              "address": "73 Belliveau Beach Rd, Pointe-du-Chêne",
+              "content": "Warm tides, soft sand and lots of lobster feasts! This is our go-to summer vacation spot.",
+              "image": "Ocean RV Park.jpg",
+              "url": "https://oceansurf.ca/en/"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5059407,
+                46.23354
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Hole in the Wall",
+              "address": "42 Old Airport Rd., Grand Manan",
+              "content": "This unique natural rock formation is just one example of the magic found on the island. I encourage everyone I know to visit Grand Manan and experience it!",
+              "image": "Hole in the Wall.jpg",
+              "url": "https://mynewbrunswick.ca/hole-in-the-wall-grand-manan/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.7447074,
+                44.7683401
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Anchorage Provincial Park",
+              "address": "136 Anchorage Rd., Grand Manan",
+              "content": "Located in the center of the island, Anchorage is at the top of my list for spending some quality time in nature this summer.",
+              "image": "AnchorageLake.jpg",
+              "url": "https://parcsnbparks.ca/TheAnchorage?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.807024,
+                44.6721217
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Cine-Parc Satellite",
+              "address": "1568 Route 135, Bois-Blanc",
+              "content": "A summer favorite for our whole family! The drive-in will surely be a buzzing spot this season, and we can't wait to be there! ",
+              "image": "Shediac Drive In.jpg",
+              "url": "https://www.facebook.com/Cin%C3%A9-Parc-Satellite-605291492825951/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.0818676,
+                47.6208801
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Picaroons Roundhouse",
+              "address": "912 Union St., Fredericton",
+              "content": "No better way to finish a warm summer day than walking along the Riverfront Trail and then grabbing a pint at Picaroons on the terrace.",
+              "image": "Picaroons Roundhouse.jpg",
+              "url": "https://www.facebook.com/ThePicaroonsRoundhouse/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.6266285,
+                45.9585946
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Miscou Lighthouse",
+              "address": "13300 Route 113, Miscou Island",
+              "content": "We're planning on packing a picnic and going on a little family adventure to Miscou Island lighthouse this summer.",
+              "image": "Miscou Lighthouse.jpg",
+              "url": "https://fr-ca.facebook.com/phare.lighthouse"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5219398,
+                48.0161972
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Clementine Cafe",
+              "address": "62 Elmwood Dr, Moncton",
+              "content": "Will be hitting up Café Clémentine after my weekly trip to the farmers market! Their capuccinos are my favourite in the city. ",
+              "image": "Clementine Cafe.jpg",
+              "url": "https://www.facebook.com/pages/Clementine-Cafe-Deli/729136330614208"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.7766449,
+                46.1042578
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Euston Park",
+              "address": "5 Euston St., Moncton",
+              "content": "Can't wait to grab some local beers and snacks under the sun at Euston Park this summer! ",
+              "image": "Euston Park.jpg",
+              "url": "https://www.eustonparksocial.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.7852529,
+                46.0823583
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Alehouse",
+              "address": "1 Market Square, Saint John",
+              "content": "Hoping to snag our regular patio seat at the Alehouse this summer, it's our favourite place to catch up after work on Fridays.",
+              "image": "Alehouse.jpg",
+              "url": "https://www.saintjohnalehouse.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.0665886,
+                45.2728087
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Stewart's Tubing",
+              "address": "723 Back Rd, Lyttleton",
+              "content": "Stewart's Tubing has always been a highlight of our summer, we love packing a picnic and stopping along the river to enjoy as the water goes by.",
+              "image": "Stewarts Tubing.jpg",
+              "url": "https://www.facebook.com/Stewartstubingmiramichi/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.9131857,
+                46.93989
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Sussex Bluffs Hiking Trail",
+              "address": "17 Rockridge Dr, Sussex Corner",
+              "content": "Looking forward to some summer afternoon hikes along the Sussex Bluffs, a short but very rewarding trail!",
+              "image": "Sussex Bluffs Hiking Trail.jpg",
+              "url": "http://www.hikingnb.ca/Trails/FundyEast/Sussex/Bluffs.html"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.4636817,
+                45.7071633
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "World's longest covered bridge",
+              "address": "365 Main St., Hartland",
+              "content": "It's always fun to drive (or walk!) across this bridge - an impressive part of New Brunswick's history!",
+              "image": "World's longest covered bridge.jpg",
+              "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_eng.aspx?id=181"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.5298493,
+                46.2969701
+              ],
+              "type": "Point"
+            }
+          },
         ],
         "type": "FeatureCollection"
       },
@@ -913,9 +1202,298 @@ const mapdata = {
               "type": "Point"
             }
           },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Pizza 13",
+              "address": "100, rue Main, Bathurst",
+              "content": "Nous rêvons de commander une pizza Bayonne de Pizza 13 et de faire un piqui-nique à la pizza. J'ai hâte d'y retourner!",
+              "image": "Pizza 13.jpg",
+              "url": "https://pizza13.ca/accueil/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.6585421,
+                47.6202446
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc National Kouchibouguac",
+              "address": "186, route 117 Kouchibouguac",
+              "content": "Nous avons si hâte de passer la longue fin de semaine à faire du vélo à Kouchibouguac, puis à se baigner dans la mer au coucher du soleil.",
+              "image": "Kouchibouguac_national_park_red_chairs-2016-13.jpg",
+              "url": "https://www.pc.gc.ca/fr/pn-np/nb/kouchibouguac"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.4687812,
+                47.0296744
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Fundy Tide Runners",
+              "address": "16, rue King, St. Andrews",
+              "content": "Fundy Tide Runners offre une vue incroyable des majestueuses baleines. Quelle chance nous avons de pouvoir vivre cette expérience chez nous!",
+              "image": "Fundy Tide Runners.jpg",
+              "url": "https://www.fundytiderunners.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.0558199,
+                45.0833832
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial de la plage Murray",
+              "address": "1680, route 955, Little Shemogue",
+              "content": "Cet été, je prévois passer de longues heures à pateauger dans les vagues et à me prélasser sous le soleil de la plage Murray.",
+              "image": "Murray Beach.jpg",
+              "url": "https://parcsnbparks.ca/MurrayBeach"
+            },
+            "geometry": {
+              "coordinates": [
+                -63.9811757,
+                46.1774051
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Jardin Botanique du Nouveau-Brunswick",
+              "address": "15, rue Principale, Saint-Jacques",
+              "content": "J'adore apporter un livre au Jardin botanique et partir à la recherche de l'endroit parfait pour me plonger dans ma lecture entourée de la beauté du jardin.",
+              "image": "New Brunswick Botanical Gardens.jpg",
+              "url": "https://jardinnbgarden.com/fr/"
+            },
+            "geometry": {
+              "coordinates": [
+                -63.9811757,
+                46.1674051
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc pour VR Ocean Surf",
+              "address": "73, chemin plage Belliveau, Pointe-du-Chêne",
+              "content": "Douces marées, sable chaud et beaucoup de homard! C'est notre destination de vacances préférée.",
+              "image": "Ocean RV Park.jpg",
+              "url": "https://oceansurf.ca/fr/"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5059407,
+                46.23354
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Hole in the Wall (la Trouée-dans-le-mur)",
+              "address": "42, chemin Old Airport",
+              "content": "Cette formation rocheuse unique n'est qu'un des nombreux attraits de cette île tout à fait magique. J'encourage tout le monde à visiter Grand Manan pour vivre une vraie aventure!",
+              "image": "Hole in the Wall.jpg",
+              "url": "https://mynewbrunswick.ca/hole-in-the-wall-grand-manan/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.7447074,
+                44.7683401
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Parc provincial Anchorage",
+              "address": "136, chemin Anchorage, Grand Manan",
+              "content": "Situé au centre de l'île, le parc provincial Anchorage est mon premier choix pour me perdre dans la nature cet été.",
+              "image": "AnchorageLake.jpg",
+              "url": "https://parcsnbparks.ca/TheAnchorage?List"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.807024,
+                44.6721217
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Cine-Parc Satellite",
+              "address": "1568, route 135, Bois-Blanc",
+              "content": "Une tradition adorée par toute la famille! Le ciné-parc sera sans doute très populaire cet été, et nous avons bien hâte d'y aller.",
+              "image": "Shediac Drive In.jpg",
+              "url": "https://www.facebook.com/Cin%C3%A9-Parc-Satellite-605291492825951/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.0818676,
+                47.6208801
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Picaroons Roundhouse",
+              "address": "912, rue Union, Fredericton",
+              "content": "Rien de mieux que terminer une chaude journée d'été par une marche sur le sentier riverain et une bière sur la terrasse de Picaroons.",
+              "image": "Picaroons Roundhouse.jpg",
+              "url": "https://www.facebook.com/ThePicaroonsRoundhouse/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.6266285,
+                45.9585946
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Phare de l'île Miscou",
+              "address": "13300, route 113, île Miscou",
+              "content": "Cet été, nous voulons préparer un pique-nique familial et partir à l'aventure vers le phare de l'île Miscou.",
+              "image": "Miscou Lighthouse.jpg",
+              "url": "https://fr-ca.facebook.com/phare.lighthouse"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.5219398,
+                48.0161972
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Café Clémentine",
+              "address": "62, prom. Elmwood, Moncton",
+              "content": "Après ma visite hebdomadaire au marché des fermiers, je m'installerai au Café Clémentine. J'adore leur cappuccino!",
+              "image": "Clementine Cafe.jpg",
+              "url": "https://www.facebook.com/pages/Clementine-Cafe-Deli/729136330614208"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.7766449,
+                46.1042578
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Euston Park",
+              "address": "5, rue Euston, Moncton",
+              "content": "J'ai bien hâte de goûter des bières et des grignotines locales en plein air chez Euston Park cet été!",
+              "image": "Euston Park.jpg",
+              "url": "https://www.eustonparksocial.com/fr/accueil"
+            },
+            "geometry": {
+              "coordinates": [
+                -64.7852529,
+                46.0823583
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Alehouse",
+              "address": "1 Market Square, Saint John",
+              "content": "J'espère m'asseoir à notre table préférée sur la terrasse de l'Alehouse cet été. C'est notre moment de détente après une semaine de travail.",
+              "image": "Alehouse.jpg",
+              "url": "https://www.saintjohnalehouse.com/"
+            },
+            "geometry": {
+              "coordinates": [
+                -66.0665886,
+                45.2728087
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Stewart's Tubing",
+              "address": "723, chemin Back, Lyttleton",
+              "content": "Stewart's Tubing est notre tradition préférée de l'été. Nous aimons préparer un pique-nique et arrêter au bord de la rivière pour profiter de la vue.",
+              "image": "Stewarts Tubing.jpg",
+              "url": "https://www.facebook.com/Stewartstubingmiramichi/"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.9131857,
+                46.93989
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Sussex Bluffs Hiking Trail",
+              "address": "17, prom. Rockridge Sussex Corner",
+              "content": "Je prévois faire de la randonnée sur le sentier Sussex Bluffs. Il est court, mais très gratifiant!",
+              "image": "Sussex Bluffs Hiking Trail.jpg",
+              "url": "http://www.hikingnb.ca/Trails/FundyEast/Sussex/Bluffs.html"
+            },
+            "geometry": {
+              "coordinates": [
+                -65.4636817,
+                45.7071633
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "World's longest covered bridge",
+              "address": "365, rue Main, Hartland",
+              "content": "Cet été je veux traverser le pont couvert le plus long du monde à pied pour vraiment en apprécier la longueur!",
+              "image": "World's longest covered bridge.jpg",
+              "url": "https://www.pc.gc.ca/apps/dfhd/page_nhs_fra.aspx?id=181"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.5298493,
+                46.2969701
+              ],
+              "type": "Point"
+            }
+          },
         ],
         "type": "FeatureCollection"
-      }
+      },
 };
 
 var tooltip = null;
@@ -934,7 +1512,7 @@ map.on('load', () => {
         'source': 'places',
         'layout': {
             'icon-image': 'heart',
-            'icon-allow-overlap': false,
+            'icon-allow-overlap': true,
             'icon-size': 0.5
         }
     });
@@ -988,7 +1566,7 @@ map.on('load', () => {
           });
         } else {
           map.flyTo({
-            center: [coordinates[0] + offsetX, coordinates[1] + offsetY],
+            center: [coordinates[0], coordinates[1]],
             zoom: lastZoom + 3,
             essential: true // this animation is considered essential with respect to prefers-reduced-motion
         });
