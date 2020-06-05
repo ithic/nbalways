@@ -12,7 +12,7 @@
                         <div class="future">{{#ifequal ../language 'fr'}}Soyez des nôtres{{else}}Join us LIVE{{/ifequal}}</div>
                         <div class="now">{{#ifequal ../language 'fr'}}Diffusion en cours{{else}}happening now LIVE{{/ifequal}}</div>
                     </div>
-                    <div class="date">{{formattedDate}}</div>
+                    <div class="date">{{{formattedDate}}}</div>
                     <div class="title"><a href="{{operatorPage}}" target="_blank" rel="noopener nofollow">{{title}}</a></div>
                     {{#if operator}}<div class="operator">{{operator}}</div>{{/if}}
                     {{#if link}}
