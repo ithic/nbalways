@@ -542,8 +542,8 @@ const mapdata = {
             },
             "geometry": {
               "coordinates": [
-                -65.4687812,
-                47.0296744
+                -64.9633426,
+                46.8103391
               ],
               "type": "Point"
             }
@@ -593,8 +593,8 @@ const mapdata = {
             },
             "geometry": {
               "coordinates": [
-                -63.9811757,
-                46.1674051
+                -68.3954024,
+                47.4383626
               ],
               "type": "Point"
             }
@@ -1230,8 +1230,8 @@ const mapdata = {
             },
             "geometry": {
               "coordinates": [
-                -65.4687812,
-                47.0296744
+                -64.9633426,
+                46.8103391
               ],
               "type": "Point"
             }
@@ -1281,8 +1281,8 @@ const mapdata = {
             },
             "geometry": {
               "coordinates": [
-                -63.9811757,
-                46.1674051
+                -68.3954024,
+                47.4383626
               ],
               "type": "Point"
             }
@@ -1341,7 +1341,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "name": "Cine-Parc Satellite",
+              "name": "Ciné-Parc Satellite",
               "address": "1568, route 135, Bois-Blanc",
               "content": "Une tradition adorée par toute la famille! Le ciné-parc sera sans doute très populaire cet été, et nous avons bien hâte d'y aller.",
               "image": "Shediac Drive In.jpg",
@@ -1460,7 +1460,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "name": "Sussex Bluffs Hiking Trail",
+              "name": "Sentier Sussex Bluffs",
               "address": "17, prom. Rockridge Sussex Corner",
               "content": "Je prévois faire de la randonnée sur le sentier Sussex Bluffs. Il est court, mais très gratifiant!",
               "image": "Sussex Bluffs Hiking Trail.jpg",
@@ -1477,7 +1477,7 @@ const mapdata = {
           {
             "type": "Feature",
             "properties": {
-              "name": "World's longest covered bridge",
+              "name": "Pont couvert le plus long du monde",
               "address": "365, rue Main, Hartland",
               "content": "Cet été je veux traverser le pont couvert le plus long du monde à pied pour vraiment en apprécier la longueur!",
               "image": "World's longest covered bridge.jpg",
@@ -1567,7 +1567,7 @@ map.on('load', () => {
         } else {
           map.flyTo({
             center: [coordinates[0], coordinates[1]],
-            zoom: lastZoom + 3,
+            zoom: lastZoom + 2,
             essential: true // this animation is considered essential with respect to prefers-reduced-motion
         });
         }
@@ -1642,7 +1642,7 @@ $(document).ready(() => {
     // Configure live area
     var events = $('.event');
     var sortedEvents = events.sort((a, b) => new Date($(b).attr('data-start')) - new Date($(a).attr('data-start')));
-    //sortedEvents.each((index, el) => $(el).css('order', index));
+    sortedEvents.each((index, el) => $(el).css('order', index));
     updateCalendar(sortedEvents);
     window.setInterval(() => {
       updateCalendar(sortedEvents);
