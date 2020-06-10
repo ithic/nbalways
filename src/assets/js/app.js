@@ -803,6 +803,23 @@ const mapdata = {
               "type": "Point"
             }
           },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Ganong Chocolate Museum",
+              "address": "73 Milltown Blvd, Saint Stephen",
+              "content": "Chocolate tasting station? Yes please! It's been way too long since I've visited St. Stephen and the Chocolate Museum... Time for a road trip!",
+              "image": "Ganong.jpg",
+              "url": "https://chocolatemuseum.ca/"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.281612,
+                45.1930991
+              ],
+              "type": "Point"
+            }
+          },
         ],
         "type": "FeatureCollection"
       },
@@ -1487,6 +1504,23 @@ const mapdata = {
               "coordinates": [
                 -67.5298493,
                 46.2969701
+              ],
+              "type": "Point"
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "Musée du chocolat Ganong",
+              "address": "73 Milltown Blvd, Saint Stephen",
+              "content": "Une dégustation de chocolat, c'est toujours une bonne idée! C'est aussi l'occasion idéale pour faire une escapade à St. Stephen et visiter le Musée du chocolat Ganong.",
+              "image": "Ganong.jpg",
+              "url": "https://chocolatemuseum.ca/?lang=fr#"
+            },
+            "geometry": {
+              "coordinates": [
+                -67.281612,
+                45.1930991
               ],
               "type": "Point"
             }
