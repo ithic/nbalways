@@ -62,6 +62,19 @@
       <script id="cr-init__45bd98d8558dfd1f" src="https://starling.crowdriff.com/js/crowdriff.js" lang="{{ language }}" async></script>
     </div>  
   </section>
+  <div class="content-container">
+    <hr />
+  </div>
+  <section id="explore" class="explore">
+    <div class="content-container">
+      {{{exploreTitle}}}
+      <ul class="links">
+        {{#each exploreLinks}}
+          <li><a href="{{url}}" target="_blank" rel="noopener nofollow">{{title}} <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M33.41,0a1,1,0,1,0,.18,2h13L25.69,22.91a1,1,0,0,0-.35,1,1,1,0,0,0,.75.75,1,1,0,0,0,1-.35L48,3.44v13a1,1,0,0,0,.5.88,1,1,0,0,0,1,0,1,1,0,0,0,.5-.88V0H33.41ZM2,10a2,2,0,0,0-1.44.56A2,2,0,0,0,0,12V48a2,2,0,0,0,.56,1.44A2,2,0,0,0,2,50H38a1.92,1.92,0,0,0,2-2V18a1,1,0,1,0-2,0V48H2V12H32a1,1,0,1,0,0-2Z"/></svg></a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
   <section id="newsletter" class="newsletter">
     <div class="content-container">
       {{#ifequal language 'fr'}}

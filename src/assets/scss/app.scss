@@ -542,6 +542,27 @@ section.crowdriff {
     }
 }
 
+section.explore {
+    ul.links {
+        list-style: none;
+        margin-left: 0;
+        font-family: montserrat;
+        font-size: 0.75em;
+        display: inline-block;
+        li {
+            position: relative;
+            margin-bottom: 0.5em;
+        }
+        svg {
+            fill: var(--body-color);
+            display: inline-block;
+            height: 1em;
+            transition: all 0.25s ease-in-out;
+            margin-left: 0.5em;
+        }
+    }
+}
+
 .block {
     display: block;
 
