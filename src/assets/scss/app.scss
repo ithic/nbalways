@@ -71,6 +71,31 @@ strong {
     font-weight: 600;
 }
 
+aside.notice {
+    background: var(--accent-color);
+    color: var(--body-color);
+    font-family: 'montserrat';
+    font-size: 0.733333333em;
+    padding: 1em;
+    line-height: 1.2;
+    .content-container {
+        max-width: 40.772727273em;
+    }
+    a {
+        color: inherit;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+        p {
+            margin: 0;
+        }
+    }
+}
+
 header {
     position: relative;
     background-size: cover;
